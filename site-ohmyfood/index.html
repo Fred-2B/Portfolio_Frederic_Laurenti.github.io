@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Ohmyfood | réservation de menus en ligne "/>
+    <title>Ohmyfood</title>
+    <!-- POLICE -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&family=Shrikhand&display=swap" rel="stylesheet">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="public/css/style.css" />
+    <link rel="shortcut icon" type="image/png" href="images/top-chef.svg" />
+  </head>
+
+  <body>
+
+    <!-- LOADER -->
+
+    <div class="preloader">
+  		<h4 class="title">ohmyfood</h4>
+        <div class="loader"></div>
+    </div>
+
+    <!-- HEADER -->
+
+    <header>
+      <div class="header__title">
+        <img class="header__img" src="images/logo/ohmyfood@2x.svg" alt="logo ohmyfood" />
+      </div>
+      <div class="header__location">
+        <i class="fas fa-map-marker-alt"></i>
+        <p class="header__details">Paris, Belleville</p>
+      </div>
+      <div class="explore-location">
+        <div class="explore-location__title">
+          <h2>Réservez le menu qui vous convient</h2>
+        </div>
+        <div class="explore-location__subtitle">
+          <p>
+            Découvrez des restaurants d'exception, séléctionnés par nos soins.
+          </p>
+        </div>
+        <a aria-label="Explorer nos restaurants"
+          class="order-button order-button--home" href="#section2">
+          Explorer nos restaurants
+        </a>
+      </div>
+    </header>
+
+    <!-- FONCTIONNEMENT -->
+
+    <section class="section-one">
+      <h3>Fonctionnement</h3>
+      <div class="section-fonctionnalities" id="section1">
+        <div class="minicard fade-2">
+          <div class="minicard__content">
+            <span class="circle">1</span>
+            <div class="miniicon">
+              <i class="fas fa-mobile-alt"></i>
+            </div>
+            <p>Choisissez un restaurant</p>
+          </div>
+        </div>
+        <div class="minicard fade-3">
+          <div class="minicard__content">
+              <span class="circle">2</span>
+              <div class="miniicon">
+                <i class="fas fa-list-ul"></i>
+              </div>
+              <p>Composez votre menu</p>
+          </div>
+        </div>
+        <div class="minicard fade-4">
+            <div class="minicard__content">
+              <span class="circle">3</span>
+              <div class="miniicon">
+                <i class="fas fa-store"></i>
+              </div>
+              <p>Dégustez au restaurant</p>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RESTAURANTS -->
+
+    <section class="section-two" id="section2">
+      <h3>Restaurants</h3>
+    <div class="section-restaurants">
+      <a href="pages-restos/lapalettedugout.html">
+        <div class="restaurant-card fade-6">
+          <div class="novelties-flag">
+            <p>Nouveau</p>
+          </div>
+          <img src="images/restaurants/la_palette_du_gout.jpg" alt="image plat du restaurant" title="La palette du goût, restaurant gastronomique">
+          <div class="content">
+            <div class="card-content">
+              <h4 class="restaurant-name">La palette du goût</h4>
+                <span class="restaurant-location">Ménilmontant</span>
+            </div>
+            <div class="heart">
+              <i class="far fa-heart" aria-hidden="true"></i>
+              <i class="fas fa-heart fa-heart-animated"></i>
+            </div>
+          </div>
+        </div>
+      </a>
+      <a href="pages-restos/lanoteenchantee.html">
+        <div class="restaurant-card fade-7">
+          <div class="novelties-flag">
+            <p>Nouveau</p>
+          </div>
+          <img src="images/restaurants/la_note_enchantee.jpg" alt="image plat du restaurant" title="La note enchantée, gastronomie méditerranéen">
+          <div class="content">
+            <div class="card-content">
+              <h4 class="restaurant-name">La note enchantée</h4>
+              <span class="restaurant-location">Charonne</span>
+            </div>
+            <div class="heart">
+              <i class="far fa-heart" aria-hidden="true"></i>
+              <i class="fas fa-heart fa-heart-animated"></i>
+            </div>
+          </div>
+        </div>
+      </a>
+      <a href="pages-restos/alafrancaise.html">
+        <div class="restaurant-card fade-8">
+          <img src="images/restaurants/a_la_francaise.jpg" alt="image plat du restaurant" title="Restaurant gastronomique à la française">
+          <div class="content">
+            <div class="card-content">
+              <h4 class="restaurant-name">À la française</h4>
+              <span class="restaurant-location">Cité Rouge</span>
+            </div>
+            <div class="heart">
+              <i class="far fa-heart" aria-hidden="true"></i>
+              <i class="fas fa-heart fa-heart-animated"></i>
+            </div>
+          </div>
+        </div>
+      </a>
+      <a href="pages-restos/ledelicedessens.html">
+        <div class="restaurant-card fade-9">
+          <img src="images/restaurants/le_delice_des_sens.jpg" alt="image plat du restaurant" title="Restaurant le délice des sens">
+          <div class="content">
+            <div class="card-content">
+              <h4 class="restaurant-name">Le délice des sens</h4>
+              <span class="restaurant-location">Folie-Méricourt</span>
+            </div>
+            <div class="heart">
+              <i class="far fa-heart" aria-hidden="true"></i>
+              <i class="fas fa-heart fa-heart-animated"></i>
+            </div>
+          </div>
+        </div>
+      </a>
+    </div>
+  </section>
+
+    <!-- FOOTER -->
+
+    <footer>
+      <h4>ohmyfood</h4>
+      <ul>
+        <li>
+          <a href="https://www.google.com/maps/uv?pb=!1s0x12d983d63a4b58e7%3A0xa28877839cc5d4e9!3m1!7e115!4shttps%3A%2F%2Flh5.googleusercontent.com%2Fp%2FAF1QipP2PLtdOXvXuCkLxwAlz2Vzuk1jYbBzu1iybMt_%3Dw260-h175-n-k-no!5srestaurant%20corse%20porto%20vecchio%20-%20Recherche%20Google!15sCgIgAQ&imagekey=!1e10!2sAF1QipP2PLtdOXvXuCkLxwAlz2Vzuk1jYbBzu1iybMt_&hl=fr" target="_blank">
+            <i class="fas fa-utensils"></i>Proposer un restaurant</a>
+        </li>
+        <li>
+          <a href=""><i class="fas fa-hands-helping"></i>Devenir partenaire</a>
+        </li>
+        <li><a href="">Mentions légales</a></li>
+        <li><a href="mailto:san@antonio.net" target="_blank">Contact</a></li>
+      </ul>
+    </footer>
+  </body>
+</html>

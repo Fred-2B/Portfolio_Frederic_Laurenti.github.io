@@ -1,0 +1,87 @@
+//HEADER PAGE ACCUEIL   
+
+.header {
+    &__title {
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    &__img {
+        padding: 20px 0;
+    }
+
+    &__location {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: rgb(234, 234, 234);
+        box-shadow:  inset 2px 19px 11px -15px rgba(0,0,0,0.25);
+        font-family: $font-content;
+        font-size: 18px;
+        font-weight: 700;
+        width: 100%;
+        padding: 4px 0;
+    }
+
+    &__details {
+        margin: 15px;
+    }
+}
+
+.explore-location {
+
+    background-color: $silver;
+    font-family: $font-content;
+    padding-bottom: 60px;
+    text-align: center;
+  
+    &__title {
+        font-size: 18px;
+        padding: 30px 75px 20px;
+    }
+  
+    &__subtitle {
+        font-size: 18px;
+        font-weight: 400;
+        margin-bottom: 35px;
+        padding: 0 40px;
+        color: $gray;
+    }
+}
+
+  //HEADER RETOS-PAGES
+
+.header-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 70px;
+    margin: 0 auto;
+    
+    img {
+      height: 34px;
+      padding: 20px 0;
+    }
+  
+    .back-home {
+      position: absolute;
+      left: 25px;
+      top: 20px;
+      font-size: x-large;
+
+        &:hover {
+            color: $colour-tertiare;
+            transform: scale(1.1);
+        }
+    }
+}
+  
+    .banniere-img {
+        margin-bottom: -30px;
+        max-height: 300px;
+        object-fit: cover;
+        width: 100%;
+  }

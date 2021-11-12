@@ -1,0 +1,153 @@
+.banniere-img {
+  margin-bottom: -30px;
+  max-height: 400px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.menu-header {
+  align-items: center;
+  display: flex;
+  font-weight: normal;
+  padding: 0 20px;
+
+    h2 {
+      font-family: $font-title;
+      margin: 35px 0;
+    }
+}
+
+.sections-restaurants-menu {
+    background-color: $silver;
+    border-radius: 30px 30px 0 0;
+    position: relative;
+    padding: 0 0 60px;
+
+    @media screen and (min-width: 992px) {
+    margin: -10px 90px 0;
+
+      h2 {
+        margin: 35px 18px;
+      }
+      .heart  {
+        right: 80px;
+      }
+    }
+}
+
+.restaurants-menus {
+  display: grid;
+
+  @media screen and (min-width: 992px) {
+    grid-template-columns: repeat(3, 1fr);
+    margin: 0 20px;
+
+    .menu-content {
+      margin: 20px 0 40px;
+    }
+  }
+}
+
+.menus {
+  max-width: 100%;
+  overflow: hidden;
+  padding: 10px 15px;
+
+  &__title {
+    font-family: $font-content;
+    padding: 0 0 10px 5px;
+    position: relative;
+    text-transform: uppercase;
+    font-weight: normal;
+    //soulignement des titres
+    &::after {
+      background-color: $colour-tertiare;
+      content: "";
+      height: 3px;
+      width: 40px;
+      left: 6px;
+      bottom: 0;
+      position: absolute;
+    }
+  }
+}
+
+.menu-content {
+  background-color: $white;
+  border-radius: 15px;
+  display: flex;
+  margin: 18px 0 20px;
+  padding: 15px 10px;
+  cursor: pointer;
+  @include shadow-card;
+  animation-duration: 1s;
+  animation-name: retard;
+  animation-fill-mode: both;
+  transform: scale(0);
+  overflow: hidden;
+  
+  
+    &__header {
+      flex: 1;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    &__title {
+      font-family: $font-content;
+      font-size: 18px;
+      font-weight: 900;
+      margin: 0;
+      padding-bottom: 5px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    &__description {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    &__price {
+      display: flex;
+      align-items: flex-end;
+      font-weight: 700;
+      padding: 0 30px 0 5px;
+      font-family: $font-content;
+    }
+
+    &__check {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: $colour-tertiare;
+      margin: -15px -118px -16px 16px;
+      transition-duration: .5s;
+      width: 80px;
+    }
+
+    &:hover &__check {
+      margin-right: -10px;
+    }
+
+    &__check-icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: $white;
+      border-radius: 100px;
+      color: $colour-tertiare;
+      width: 26px;
+      height: 26px;
+      transform: rotate(180deg);
+      transition-duration: .6s;
+      
+    }
+  
+      &:hover &__check-icon {
+          transform: rotate(0);
+      }
+}

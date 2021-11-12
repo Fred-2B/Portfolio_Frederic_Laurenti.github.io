@@ -1,0 +1,263 @@
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	background: #f1f1f1;
+	box-sizing: border-box;
+}
+
+header {
+	background-image: url(../img/blue_merR.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	max-width: 100%;
+	height: 45vh;
+	background-position: center;
+	margin-top: 86px;
+	border-bottom: 2px solid  #ff3346;
+}
+
+.container-flex {
+	display: flex;
+	justify-content: space-evenly;
+}
+
+nav .fab {
+	font-size: 35px;
+    color: #003366;
+    /*margin-left: 50px;*/
+}
+
+nav .fab:hover {
+	animation: icon-glitch 1s infinite;
+}
+
+@keyframes icon-glitch {
+  0% {
+    text-shadow: 5px 4px rgb(244, 67, 54), -5px -6px rgb(33, 150, 243);
+  }
+  25% {
+    text-shadow: -5px -6px rgb(244, 67, 54), 5px 4px rgb(33, 150, 243);
+  }
+  50% {
+    text-shadow: 5px 4px rgb(244, 67, 54), -8px 4px rgb(33, 150, 243);
+  }
+  75% {
+    text-shadow: -8px -4px rgb(244, 67, 54), -5px -4px rgb(33, 150, 243);
+  }
+  100% {
+    text-shadow: -5px 0 rgb(244, 67, 54), 5px -4px rgb(33, 150, 243);
+  }
+}
+
+ /* NAVBAR */
+.navbar {
+	padding: 0 15px;
+	background-color: #fff;
+	border-top: 5px solid  #ff3346;
+	border-bottom: 2px solid  #ff3346;
+}
+
+.navbar img {
+	max-height: 100px;
+}
+
+#navbarCollapse a {
+    font-size: 20px;
+    font-weight: 600;
+    color: #ff3346!important;
+}
+
+#navbarCollapse a:hover {
+	color: #ff3346!important;
+	transition: .4s all;
+	text-shadow: 0em 0em 0.1em #000000;
+}
+
+	/* PRESENTATION */
+
+#presentation h1 {
+	text-align: center;
+	font-weight: 600;
+	font-size: 80px;
+	color: #2c3e50;
+	font-family: 'Lato', sans-serif;
+	padding:10px 5px 15px 5px;
+	margin: 50px 0;
+}
+
+	/* CONTENT */
+
+#content1 {
+	padding-top: 50px;
+	padding-bottom: 30px;
+	border-top: 1px solid #ff3346;
+	border-bottom: 1px solid #ff3346;
+}
+
+#content1 img {
+	margin-top: 25px;
+}
+
+#content1 p {
+	font-family: 'Aria', sans-serif;
+	text-align: justify;
+	font-size: 25px;
+	color: #343a40;
+}
+
+.bloc,.bloc2 {
+	max-width: 1000px; 
+	padding: 50px 0;
+}
+
+.bloc h2,.bloc2 h2 {
+	margin-top: 60px;
+	margin-bottom: 50px;
+	text-align: center;
+	font-family: 'Lato', sans-serif;
+	font-weight: 650;
+	font-size: 40px;
+	color: #2c3e50;
+}
+
+.bloc p,.bloc2 p {
+	text-align: justify;
+	padding: 0 20px 0 20px;
+	font-size: 19px;
+	font-family: 'Aria', sans-serif;
+	color: #343a40;
+}
+
+#content3 {
+	border-top: 1px solid #ff3346;
+}
+
+#content4 {
+	border-top: 1px solid #ff3346;
+	border-bottom: 1px solid #ff3346;
+	background-image: url(../img/jetée.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	max-width: 100%;
+	height: auto;
+	background-position: center;
+	display: block;
+	position: relative;
+	margin-bottom: 20px;
+}
+
+#content4 .overlay {
+	background: rgba(255, 255, 255, 0.50);
+	height: auto;
+	width: 100%;
+}
+
+#content4 h2 {
+	color: #2c3e50;
+	font-family: 'Lato', sans-serif;
+	font-weight: 650;
+	font-size: 50px;
+	text-align: center;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+#content4 .icone {
+	text-align: center;
+}
+
+#content4 ul {
+	list-style: none;
+	text-align: center;
+}
+
+.marg {
+	padding: 3px;
+	font-size: 1.3rem;
+	font-family: 'Aria', sans-serif;
+}
+
+#content4 i {
+	cursor: pointer;
+}
+
+#content4 i:hover {
+	-webkit-animation: bounce 0.35s ease infinite alternate;
+	        animation: bounce 0.35s ease infinite alternate;
+}
+
+@-webkit-keyframes bounce{
+	from{
+        -webkit-transform: translateY(0);
+        transform :translateY(0);
+    }
+    to{
+        -webkit-transform: translateY(-20px);
+        transform :translateY(-20px);
+    }
+}
+
+@keyframes bounce{
+	from{
+        -webkit-transform: translateY(0);
+        transform :translateY(0);
+    }
+    to{
+        -webkit-transform: translateY(-20px);
+        transform :translateY(-20px);
+    }
+}
+
+	/* CAROUSEL */
+
+#carouselExample1 {
+    width: 600px;
+    padding: 10px 20px 0 20px;
+    float: right;
+}
+
+#carouselExample2 {
+    width: 600px;
+    padding: 10px 20px 0 20px;
+    float: right;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #343a40;
+}
+
+	/* BOUTON RESERVATION */
+
+#reservation button {
+	display: block;
+	text-align: center;
+	background-color: #0596DE;
+	font-size: 14px;
+	overflow: hidden;
+	width: 220px;
+	height: 35px;
+	position: fixed;
+	bottom: 2px;
+	left: 2px;
+	z-index: 1000;
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;
+	line-height: 30px;
+}
+
+#reservation a {
+	text-decoration: none;
+	color: #fff!important;
+}
+
+
+
+
+
