@@ -190,9 +190,7 @@ h1 {
 
 #langages {
   color: #000;
-  /*margin: 0 auto 80px;*/
   padding: 80px 0;
-  /*background-color: rgba(116, 117, 121, 0.60);*/
 }
 
 .biColor1 {
@@ -265,7 +263,7 @@ h1 {
 
 #portfolio {
   color: #000;
-  padding: 80px 0 0;
+  padding: 80px 0;
 }
 
 .biColor2 {
@@ -278,6 +276,11 @@ h1 {
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.80) 0px 3px 25px 5px;
   padding: 0 0 60px;
+}
+
+.block {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .box {
@@ -557,9 +560,13 @@ footer .fas:hover {
 }
 
 
- @media only screen and (max-width: 1200px) {
-#portfolio {
-  grid-template-columns: repeat(2, 1fr);
-
+@media only screen and (max-width: 992px) {
+  .box {
+    width: 60%;
+    margin: 0 0 30px;
+    }
+    .center {
+   left: 20%;
+   }
 }
-}
+  
