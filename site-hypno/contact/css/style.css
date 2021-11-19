@@ -8,22 +8,21 @@ body {
 
 header {
 	background-image: url(../img/blue_merR.jpg);
+	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+	background-attachment: fixed;
 	max-width: 100%;
-	height: 45vh;
-	background-position: center;
-	margin-top: 86px;
+	height: 70vh;
 	border-bottom: 2px solid #ff3346; 
 }
 
-header .fab {
-	font-size: 35px;
+nav .fab {
+	font-size: 40px;
     color: #003366;
-    /*margin-left: 40px;*/
 }
 
-header .fab:hover {
+nav .fab:hover {
 	animation: icon-glitch 1s infinite;
 }
 
@@ -47,7 +46,7 @@ header .fab:hover {
 
 #navbarCollapse {
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 700;
     color: #ff3346!important;
 }
 
@@ -73,39 +72,49 @@ header .fab:hover {
 	max-height: 100px;
 }
 
-	/* PRESENTATION */
+	/* HEADER */
 
-#presentation h1 {
+.presentation {
+	padding: 300px 0 200px;
+} 
+
+h1 {
 	text-align: center;
-	margin-top: 60px;
-	margin-bottom: 60px;
-	font-weight: 600;
-	font-size: 80px;
+	font-weight: 500;
+	font-size: 70px;
+	font-family: 'Kaushan Script', cursive;
+	text-shadow: #2c3e50 0.1em 0.1em 0.3em;
 	color: #2c3e50;
-	font-family: 'Lato', sans-serif;
-	padding-bottom: 10px;
 }
 
 	/*  CONTACT/PLAN */
 
 #contact h2 {
 	color: #2c3e50;
-	font-family: 'Lato', sans-serif;
-	font-weight: 650;
-	font-size: 40px;
-	padding: 20px 0;
+	font-family: 'Kaushan Script', cursive;
+	text-shadow: #2c3e50 0.1em 0.1em 0.3em;
+	font-size: 50px;
+	padding: 30px 0 30px 15px;
 }
 
 #contact {
-	margin: 0 auto;
+	margin: 50px auto 0;
+	padding: 0 10px 0 10px;
 	width: 700px;
 	border: 1px solid #ff3346;
 	border-radius: 10px;
+	color: #2c3e50;
+	box-shadow: rgba(0, 0, 0, 0.80) 0px 3px 25px 5px;
 }
 
 iframe {
 	width: 670px;
 	height: 415px;
+	padding: 0 10px 0;
+}
+
+#contact, p, h5 {
+	padding: 0 0 0 10px;
 }
 
 	/*  TARIF */
@@ -115,21 +124,21 @@ iframe {
 	width: 700px;
 	border: 1px solid #ff3346;
 	border-radius: 10px;
+	box-shadow: rgba(0, 0, 0, 0.80) 0px 3px 25px 5px;
 }
 
-#tarif h5 {
-	padding-top: 20px;
-	padding-bottom: 10px;
+#tarif h4 {
+	padding: 40px 0 30px;
 	color: #2c3e50;
-	font-family: 'Lato', sans-serif;
-	font-weight: 650;
-	font-size: 30px;
+	font-family: 'Kaushan Script', cursive;
+	text-shadow: #2c3e50 0.1em 0.1em 0.3em;
+	font-size: 50px;
 }
 
 #tarif p {
 	color: #2c3e50;
 	font-family: 'Aria', sans-serif;
-	font-size: 1.1rem;
+	font-size: 1.2rem;
 }
 
 #tarif .fb {
@@ -140,11 +149,11 @@ iframe {
 #citation {
 	background-size: cover;
 	position: relative;
-	min-height: 350px;
+	min-height: 400px;
 	background-image: url('../img/duo.jpg');
 	background-repeat: no-repeat;
 	text-align: center;
-	color: #343a40;
+	color: #2c3e50;
 	border-top: 1px solid #ff3346;
 	border-bottom: 1px solid #ff3346;
 	max-width : 100%;
@@ -155,11 +164,16 @@ iframe {
 }
 
 #citation h2 {
-	font-family: 'Lato', sans-serif;
+		font-family: 'Lato', sans-serif;
     font-size: 40px;
     font-weight: 900;
-    color: #343a40;
-    padding-top: 100px;
+    color: #2c3e50;
+    padding-top: 150px;
+		font-style: italic;
+}
+
+.footer {
+	color: #2c3e50;
 }
 
 	/* BOUTON RESERVATION */
@@ -167,7 +181,7 @@ iframe {
 #reservation button {
 	display: block;
 	text-align: center;
-	background-color: #0596DE;
+	background-color: #2c3e50;
 	font-size: 14px;
 	overflow: hidden;
 	width: 220px;
@@ -184,5 +198,19 @@ iframe {
 #reservation a {
 	text-decoration: none;
 	color: #fff!important;
+}
+	
+
+@media only screen and (max-width: 940px) {
+	#reservation button {
+		width: 150px;
+		height: 35px;
+		line-height: 15px;
+		padding: 0;
+	}
+	h1 {
+		font-weight: 400;
+		font-size: 50px;
+	}
 }
 
