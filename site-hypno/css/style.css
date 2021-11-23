@@ -93,22 +93,26 @@ h1 {
 	/* CONTENT */
 
 #content1 {
-	padding-top: 50px;
-	padding-bottom: 30px;
+	padding: 50px 0;
 	border-top: 1px solid #ff3346;
 	border-bottom: 1px dashed #ff3346;
 }
 
-#content1 img {
-	margin-top: 65px;
+#content1 .image{
+	display: flex;
+}
+
+#content1 .img {
+	margin: auto;
 }
 
 #content1 p {
 	font-family: 'Raleway', sans-serif;
 	text-align: justify;
-	font-size: 25px;
+	font-size: 22px;
 	color: #2c3e50;
 	font-weight: 500;
+	margin-top: 20px;
 }
 
 .bloc,.bloc2 {
@@ -120,8 +124,7 @@ h1 {
 	margin-top: 60px;
 	margin-bottom: 50px;
 	text-align: center;
-	font-family: 'Lato', sans-serif;
-	font-weight: 700;
+	font-weight: 500;
 	font-size: 60px;
 	color: #2c3e50;
 	text-shadow: #2c3e50 0.1em 0.1em 0.3em;
@@ -162,9 +165,8 @@ h1 {
 
 #content4 h2 {
 	color: #2c3e50;
-	font-family: 'Lato', sans-serif;
-	font-weight: 650;
-	font-size: 50px;
+	font-weight: 500;
+	font-size: 60px;
 	text-align: center;
 	padding-top: 40px;
 	padding-bottom: 40px;
