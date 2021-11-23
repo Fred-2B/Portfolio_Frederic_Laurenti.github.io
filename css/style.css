@@ -331,6 +331,10 @@ h1 {
 	border-radius: 5px;
 }
 
+.thumbnail img {
+  object-fit: cover;
+}
+
  .title-cart h3 {
   font-family: 'Dancing Script', cursive;
   color: #4169E1;   /*#2c3e50;*/
