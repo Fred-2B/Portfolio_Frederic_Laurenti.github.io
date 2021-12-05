@@ -18,12 +18,16 @@ header {
 	background-attachment: fixed;
 	max-width: 100%;
 	height: 70vh;
-	border-bottom: 2px solid #ff3346; 
 }
 
-nav .fab {
+nav .face {
 	font-size: 40px;
-    color: #003366;
+    color: #3b5998;
+}
+
+nav .link {
+	font-size: 40px;
+    color: #0e76a8;
 }
 
 nav .fab:hover {
@@ -62,6 +66,11 @@ nav .fab:hover {
 	border-bottom: 2px solid  #ff3346;
 }
 
+.navbar .logo img {
+	border-radius: 50%;
+	max-height: 95px;
+}
+
 .navbar img {
 	max-height: 100px;
 }
@@ -78,7 +87,7 @@ nav .fab:hover {
 	text-shadow: 0em 0em 0.1em #000000;
 }
 
-	/* PRESENTATION */
+	/* TITLE */
  
 h1 {
 	text-align: center;
@@ -90,20 +99,56 @@ h1 {
 	padding: 300px 0 200px;
 }
 
+	/* CONTACTEZ-MOI */
+
+.contact {
+	margin: 0;
+	margin-left: auto;
+    margin-right: auto;
+	background: #38628d;
+	border-radius: 25px;
+	box-shadow: #2c3e50 0px 3px 25px 2px;
+	height: auto;
+	border: 1px solid #2c3e50;
+	width: 400px;
+	transition: .4s all ease-in-out;
+	display: block;
+}
+
+.contact:hover {
+	background: #2c3e50;
+	box-shadow: #2c3e50 0px 3px 25px 15px;
+	border: 1px solid #ff3346;
+}
+
+.contact h5 {
+	margin-bottom: 5px;
+}
+
+.minicard__content {
+	font-size: 20px;
+	margin: 15px 20px;
+	font-weight: 600;
+	color: #f1f1f1;
+	text-align: center;
+}
+
 	/* CONTENT */
 
 #content1 {
 	padding: 50px 0;
-	border-top: 1px solid #ff3346;
-	border-bottom: 1px dashed #ff3346;
+	border-top: 2px solid #2c3e50;
+	border-bottom: 1px solid  #2c3e50;
 }
 
-#content1 .image{
+#content1 .image {
 	display: flex;
 }
 
 #content1 .img {
 	margin: auto;
+	border: 10px groove #38628d;
+	object-fit: contain;
 }
 
 #content1 p {
@@ -112,17 +157,26 @@ h1 {
 	font-size: 22px;
 	color: #2c3e50;
 	font-weight: 500;
-	margin-top: 20px;
+}
+
+.prenom {
+	font-family: 'Raleway', sans-serif;
+	font-size: 28px;
+	color: #2c3e50;
+	font-weight: 500;
+}
+
+#content2, #content3 {
+	padding: 10px 0;
 }
 
 .bloc,.bloc2 {
 	max-width: 1000px; 
-	padding: 50px 0;
+	margin: 100px 0;
 }
 
-.bloc h2,.bloc2 h2 {
-	margin-top: 60px;
-	margin-bottom: 50px;
+.bloc h2, .bloc2 h2 {
+	margin: 0 0 40px;
 	text-align: center;
 	font-weight: 500;
 	font-size: 60px;
@@ -131,21 +185,17 @@ h1 {
 	font-family: 'Kaushan Script', cursive;
 }
 
-.bloc p,.bloc2 p {
+.bloc p, .bloc2 p {
 	text-align: justify;
-	padding: 0 20px 0 20px;
+	padding: 0 20px;
 	font-size: 19px;
 	font-family: 'Aria', sans-serif;
 	color: #2c3e50;
 }
 
-#content3 {
-	border-top: 1px dashed #ff3346;
-}
-
 #content4 {
-	border-top: 1px solid #ff3346;
-	border-bottom: 1px solid #ff3346;
+	border-top: 1px solid #2c3e50;
+	border-bottom: 1px solid #2c3e50;
 	background-image: url(../img/jetée.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -154,7 +204,7 @@ h1 {
 	background-position: center;
 	display: block;
 	position: relative;
-	margin-bottom: 20px;
+	margin-bottom: 80px;
 }
 
 #content4 .overlay {
@@ -223,7 +273,10 @@ h1 {
 }
 
 .footer {
+	margin-top: 80px;
 	color: #2c3e50;
+	padding-top: 10px;
+	/*border-top: 1px solid #2c3e50; /*#A9A9A9;*/
 }
 
 	/* CAROUSEL */
@@ -252,6 +305,7 @@ h1 {
 	display: block;
 	text-align: center;
 	background-color: #2c3e50;
+	color: #fff!important;
 	font-size: 14px;
 	overflow: hidden;
 	width: 220px;
@@ -265,10 +319,10 @@ h1 {
 	line-height: 30px;
 }
 
-#reservation a {
-	text-decoration: none;
-	color: #fff!important;
+#reservation button span:hover {
+	color: #ff3346;
 }
+
 
 
 @media only screen and (max-width: 940px) {
