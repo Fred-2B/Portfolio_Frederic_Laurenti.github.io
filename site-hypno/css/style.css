@@ -6,7 +6,7 @@ body {
 	margin: 0;
 	padding: 0;
 	height: 100vh;
-	background: #f1f1f1;
+	background-color: #e0e0e4;
 	box-sizing: border-box;
 }
 
@@ -78,7 +78,7 @@ nav .fab:hover {
 #navbarCollapse a {
     font-size: 20px;
     font-weight: 700;
-    color: #ff3346!important;
+    color: #2c3e50!important;
 }
 
 #navbarCollapse a:hover {
@@ -92,7 +92,7 @@ nav .fab:hover {
 h1 {
 	text-align: center;
 	font-weight: 500;
-	font-size: 70px;
+	font-size: 75px;
 	font-family: 'Kaushan Script', cursive;
 	text-shadow: #2c3e50 0.1em 0.1em 0.3em;
 	color: #2c3e50;
@@ -119,6 +119,7 @@ h1 {
 	background: #2c3e50;
 	box-shadow: #2c3e50 0px 3px 25px 15px;
 	border: 1px solid #ff3346;
+	cursor: pointer;
 }
 
 .contact h5 {
@@ -139,6 +140,7 @@ h1 {
 	padding: 50px 0;
 	border-top: 2px solid #2c3e50;
 	border-bottom: 1px solid  #2c3e50;
+	/*background: #f1f1f1;*/
 }
 
 #content1 .image {
@@ -176,7 +178,7 @@ h1 {
 }
 
 .bloc h2, .bloc2 h2 {
-	margin: 0 0 40px;
+	margin: 0 0 60px;
 	text-align: center;
 	font-weight: 500;
 	font-size: 60px;
@@ -235,7 +237,7 @@ h1 {
 
 .marg {
 	padding: 3px;
-	font-size: 1.3rem;
+	font-size: 1.4rem;
 	font-family: 'Aria', sans-serif;
 	color: #2c3e50;
 }
