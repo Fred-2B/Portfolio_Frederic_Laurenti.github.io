@@ -326,10 +326,9 @@ h1 {
 }
 
 
-
 @media only screen and (max-width: 940px) {
 	#reservation button {
-		width: 150px;
+		width: 140px;
 		height: 35px;
 		line-height: 15px;
 		padding: 0;
@@ -337,6 +336,16 @@ h1 {
 	h1 {
 		font-weight: 400;
 		font-size: 50px;
+	}
+}
+
+@media only screen and (max-width: 768px) {
+	header {
+		height: 30vh;
+	}
+	h1 {
+		padding: 80px;
+		font-size: 40px;
 	}
 }
 
