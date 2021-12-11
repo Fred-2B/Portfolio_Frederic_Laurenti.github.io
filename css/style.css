@@ -3,12 +3,6 @@ body {
 	padding: 0;
 	height: 100vh;
   background-color: #747579;
-  /*background-image: url(../img/back1.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed; /*rgb(241, 241, 241)*/
-  /*background: #f1f1f1;*/
 }
 
 .section-title h2 {
@@ -103,7 +97,7 @@ h1 {
 }
 
 .anim-typewriter {
-  animation: typewriter 4s steps(44) 2.5s 1 normal both, 
+  animation: typewriter 3s steps(44) 2s 1 normal both, 
   blinkTextCursor 500ms steps(44) infinite normal;
 }
 
@@ -135,7 +129,7 @@ h1 {
 	background-repeat: no-repeat;
 	background-position: center;
 	background-attachment: fixed;
-  border-bottom: 1 px solid #D3D3D3;
+  border-bottom: 1px solid #D3D3D3;
 }
 
 .light-background {
