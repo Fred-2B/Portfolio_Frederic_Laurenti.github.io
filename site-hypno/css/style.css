@@ -96,7 +96,7 @@ h1 {
 	font-family: 'Kaushan Script', cursive;
 	text-shadow: #2c3e50 0.1em 0.1em 0.3em;
 	color: #2c3e50;
-	padding: 300px 0 200px;
+	padding: 200px 0 0;
 }
 
 	/* CONTACTEZ-MOI */
@@ -294,6 +294,11 @@ h1 {
 	margin: 0 auto;
 }
 
+#diplomes .card2, .card3 {
+	top: 50%;
+	transform: translateY(-50%);
+}
+
 .footer {
 	margin-top: 80px;
 	color: #2c3e50;
@@ -364,7 +369,7 @@ h1 {
 		height: 30vh;
 	}
 	h1 {
-		padding: 80px;
+		padding: 50px;
 		font-size: 50px;
 	}
 	#diplomes {
