@@ -217,32 +217,32 @@ h1 {
 }
 
 .htmlTitleColor {
-	color: #ff0000;
+	color: #dd4b25;
   
 }
 
 .cssTitleColor {
-    color: #d03f9f;
+    color: #2862e9;
 }
 
 .bootstrapTitleColor {
-    color: #8011f5;
+    color: #8452cf;
 }
 
 .jsTitleColor {
-    color: #FFFF00;
+    color: #efd81d;
 }
 
 .vueTitleColor {
-    color: #f36c23;
+    color: #4db989;
 }
 
 .nodeTitleColor {
-    color: #5a934c;
+    color: #76b15d;
 }
 
 .mongoTitleColor {
-    color: #00c853;
+    color: #387a2c;
 }
 
 .mysqlTitleColor {
@@ -329,18 +329,25 @@ h1 {
   object-fit: cover;
 }
 
- .title-cart h3 {
+ .title-cart {
   font-family: 'Dancing Script', cursive;
-  color: #4169E1;   /*#2c3e50;*/
+  color: #4169E1;  
 	text-align: center;
-	padding: 10px 0 0;
-  margin-top: 10px;
-  font-size: 30px;
+	font-size: 30px;
+  margin-top: 3px;
+}
+
+.back_text {
+  border-top: 1px solid #ff0000;
+  border-bottom: 1px solid #ff0000;
+  font-family: 'Zen Kurenaido', sans-serif;
+  color: #2c3e50;
+  font-size: 1.2rem;
 }
 
 .contenu {
   position: absolute;
-  top: 50%;
+  top: 75%;
   left: 50%;
   transform: translate(-50%,-50%);
   color: #2c3e50;
@@ -348,75 +355,110 @@ h1 {
   width: 100%;
 }
 
+.back_skills {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0;
+  margin-bottom: 5px;
+  font-size: 12px;
+  background-color: transparent;
+  list-style-type: none;
+}
+
+.skills_item {
+  padding: 0.2rem 1rem;
+  margin: 0 0.5rem 0.5rem 0;
+  border-radius: 15px;
+  font-weight: bold;
+  color: black;
+}
+
+.html {
+  background-color: #dd4b25;
+}
+
+.css {
+  background-color: #2862e9;
+}
+
+.sass {
+  background-color: #c76494;
+}
+
+.js{
+  background-color: #efd81d;
+}
+
+.node {
+  background-color: #76b15d;
+}
+
+.express {
+  background-color: #cecece;
+}
+
+.mongo {
+  background-color: #387a2c;
+}
+
+.bootstrap {
+  background-color: #8452cf;
+}
+
+.api {
+  background-color: silver;
+}
+
+.vue {
+  background-color: #4db989;
+}
+
+.ekko {
+  background-color: #9dbd8783;
+}
+
+.slide {
+  background-color: #b2dad4;
+}
+
 .ocr {
   font-size: 12px;
-  margin: 2px auto 0;
+  color: #2c3e50;
 }
 
-	/*ANIMATION BOUTONS CARTES */
-
-.center {
-  width: 180px;
-  height: 60px;
-  position: absolute;
-  left: 25%;
-}
-
-.center a {
+.link a {
+  color: #2c3e50;
+  font-size: 1rem;
   text-decoration: none;
 }
 
-.btn-cart {
-  width: 180px;
-  height: 60px;
-  cursor: pointer;
-  background: transparent;
-  border: 1px solid #2c3e50;
-  outline: none;
-  transition: 1s ease-in-out;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.link a::after {
+  content: "";
+  position: relative;
+  width: 0;
+  height: 1px;
+  display: block;
+  z-index: 100;
+  background-color: #ff0000;
+  transition: .3s ease-out all;
+  left: 50%;
+  top: 2px;
+  transform: translateX(-50%);
 }
 
-.btn-cart svg {
-  position: absolute;
-  left: 0;
-  top: 0;
-  fill: none;
-  stroke: #ff0000; 
-  stroke-dasharray: 150 480;
-  stroke-dashoffset: 150;
-  transition: 1s ease-in-out;
-}
-
-.btn-cart:hover {
-  transition: 1s ease-in-out;
-  background: #D3D3D3;
-}
-
-.btn-cart:hover svg {
-  stroke-dashoffset: -480;
-}
-
-.btn-cart span {
-  color: #2c3e50;
-  font-size: 18px;
-  font-weight: 400;
+.link a:hover::after{
+  width: 80px;
 }
 
 	/* CONTACT*/
-
-/*#contact {
-  background-color: #848587;
-}*/
 
 .section-titleC h2 {
 	font-size: 50px;
   display: inline-block;
   margin-top: 60px;
   font-family: 'Dancing Script', cursive;
-  color: #f1f1f1;   /*#2c3e50*/
+  color: #f1f1f1;   
   font-weight: 700;
   text-shadow: black 0.1em 0.1em 0.2em;
 }
@@ -540,7 +582,6 @@ h1 {
 	/* FOOTER */
 
 footer {
-	/*background-color:#848587;*/
 	border-bottom: 1px solid #ff0000;
 }
 
@@ -562,9 +603,9 @@ footer .fas:hover {
   .box {
     width: 60%;
     margin: 0 0 30px;
-    }
-    .center {
+  }
+  .center {
    left: 20%;
-   }
+  }
 }
   
