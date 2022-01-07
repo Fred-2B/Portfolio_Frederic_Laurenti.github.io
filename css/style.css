@@ -162,9 +162,8 @@ h1 {
 }
 
 .biColor {
-  background-color: #D3D3D3;
+  background-color: #d3d3d3;
   padding-bottom: 30px;
-  border: 1px solid #D3D3D3;
   box-shadow: rgba(0, 0, 0, 0.80) 0px 3px 25px 5px;
   border-radius: 5px;
   border: 1px solid #ff0000;
@@ -183,7 +182,6 @@ h1 {
 	/* LANGAGES */
 
 #langages {
-  color: #000;
   padding: 80px 0;
 }
 
