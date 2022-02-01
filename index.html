@@ -1,530 +1,522 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Portfolio | Frédéric LAURENTI développeur web</title>
-	<meta name="description" content="Portfolio de Frédéric LAURENTI, développeur web. Présentation de mes réalisations de sites web">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frederic LAURENTI | Portfolio</title>
+    
+    <!-- META TAGS -->
+    <meta name="description" content="Portfolio de Frédéric LAURENTI, développeur web. Présentation de mes réalisations de sites web">
 	<meta name="keywords" content="Frédéric LAURENTI, Portfolio, Développeur, Intégrateur, Web, page web, HTML, CSS, Développeur web, création de site web, site internet, SEO, Développeur et Intégrateur web, Bootstrap, VueJs, NodeJs, WordPress, développeur France, webdesign">
 
-	<!-- INDEX ROBOTS -->
+    <!-- INDEX ROBOTS -->
 	<meta name="robots" content="index, follow">
-	<link rel="canonical" href="https://frederic-laurenti.pagesperso-orange.fr/#top" />
-	
-	<!-- POLICE STYLE -->
-	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400&display=swap" rel="stylesheet">
+	<link rel="canonical" href="https://frederic-laurenti.pagesperso-orange.fr/#accueil" />
+
+    <!-- META TAGS SEO -->
+	<meta property="og:title" content="Portfolio | Frédéric LAURENTI développeur web" />
+    <meta property="og:type" content="website" />
+    <meta property="og:description" content="Portfolio | Frédéric LAURENTI développeur web, Présentation de mes réalisations de sites web" />
+    <meta property="og:url" content="https://frederic-laurenti.pagesperso-orange.fr/#top" />
+
+    <!-- POLICE STYLE -->
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,300;1,400&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap" rel="stylesheet">
 
-	<!-- META TAGS SEO -->
-	<meta property="og:title" content="Portfolio | Frédéric LAURENTI développeur web" />
-  <meta property="og:type" content="website" />
-  <meta property="og:description" content="Portfolio | Frédéric LAURENTI développeur web, découvrir les réalisations de mes apprentissages" />
-  <meta property="og:url" content="https://frederic-laurenti.pagesperso-orange.fr/#top" />
-	
-	<!-- BOOTSTRAP -->
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" >
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
-	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
-	<script src="https://kit.fontawesome.com/16cf00563b.js" crossorigin="anonymous"></script>
-	
-	<!-- CUSTOM CSS -->
+    <!-- CSS BOOTSTRAP -- Currently v5.1.3 -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- JS BOOTSRTAP -->
+    <script src="js/bootstrap.bundle.min.js" defer></script>
+    
+    <script src="https://kit.fontawesome.com/16cf00563b.js" crossorigin="anonymous"></script>
+
+    <!-- CUSTOM CSS -->
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="shortcut icon" type="image/ico" href="img/favicon.ico">
-
-	<link rel="apple-touch-icon" sizes="180x180" href="img/apple-touch-icon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
-	<link rel="manifest" href="img/site.webmanifest">
-	<script src="js/script.js"></script>
-
-	<style> 
-	body { 
-		animation: fadeInAnimation ease 4s; 
-		animation-fill-mode: forwards; 
-		animation-iteration-count: 1; 
-	} 
-	@keyframes fadeInAnimation { 
-		0% { 
-			opacity: 0; 
-		} 
-		100% { 
-		opacity: 1; 
-		} 
-	} 
-	</style> 
+	<link rel="shortcut icon" href="img/corse2.png">
+ 
+    <style> 
+    body { 
+        animation: fadeInAnimation ease 5s; 
+        animation-fill-mode: forwards; 
+        animation-iteration-count: 1; 
+    } 
+    @keyframes fadeInAnimation { 
+        0% { 
+            opacity: 0; 
+        } 
+        100% { 
+        opacity: 1; 
+        } 
+    } 
+    </style>
 
 </head>
+<body id="accueil" data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="60">
 
-<body id="accueil" data-spy="scroll" data-target=".navbar" data-offset="60">
+    <!-- NAVBAR -->
 
-	<!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+        <div class="container-fluid">
+            <a href="#accueil" class="navbar-brand">
+                <img src="img/code-icon1.png" alt="Logo du site de frederic">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#accueil">Accueil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Présentation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#langages">Langages</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-<nav class="navbar fixed-top navbar-expand-lg navbar-light">
- 	<a class="navbar-brand" href="#accueil">
-    	<img src="img/code-icon1.png" alt="Logo fred" title="haut de page">
-  	</a>
-  	<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-		<span class="navbar-toggler-icon"></span>
-	</button>
+    <!-- header-->
 
-	<div class="collapse navbar-collapse" id="navbarCollapse">
-	    <ul class="navbar-nav ml-auto">
-	    	<li class="nav-item mr-3">
-	        <a class="nav-link" href="#accueil">Accueil</a>
-	      </li>
-	     	<li class="nav-item mr-3">
-	        <a class="nav-link" href="#about">Présentation</a>
-	      </li>
-	      <li class="nav-item mr-3">
-	        <a class="nav-link" href="#langages">Langages</a>
-	      </li>
-	      <li class="nav-item mr-3">
-	        <a class="nav-link" href="#portfolio">Portfolio</a>
-	      </li>
-	      <li class="nav-item mr-3">
-	        <a class="nav-link" href="#contact">Contact</a>
-	      </li>
-	    </ul>
-	</div>
-</nav>
+    <header id="introduction">
+        <div class="col-md-12 text-center">
+            <div class="light-background">
+                <h1 class="">Frédéric Laurenti</h1>
+                <div class="hr mx-auto"></div>  
+                <p class="post-title line-1 anim-typewriter">Développeur Web</p>
+            </div>
+        </div>
+    </header>
 
- <!-- header-->
+    <!-- PRESENTATION -->
 
-<header id="introduction">
-    <div class="col-md-12 text-center">
-      <div class="light-background" title="Frédéric Laurenti Développeur Web">
-        <h1 class="name-title">Frédéric Laurenti</h1>
-        <hr class="separator-text red-separator pb-3">
-        <p class="post-title line-1 anim-typewriter">Développeur Web</p>
-      </div>
-    </div>
-</header>
+    <section id="about">
+        <div class="container col-md-10 biColor">
+            <div class="text-center section-title">
+                <h2>Présentation</h2>
+                <div class="hr mx-auto"></div>
+            </div>
+            <div class="about-text text-center">
+                <p>Après plusieurs années dans le domaine de l'audiovisuel en qualité d'encadrant technique dans la maintenance, l'installation et le conseil pour le <strong>Home Theater</strong>, je me passionne aujourd'hui pour la <strong>Programmation </strong> et plus particulièrement le <strong>Web</strong>.<br> J'ai appris les bases du langage de programmation à la <strong>3W ACADEMY</strong>, et de manière autodidacte en prenant appui auprès d'<strong>Udémy</strong>. Puis j'ai approfondi mes connaissances avec <strong>OpenClassRooms</strong> en validant un titre de niv 5 (bac +2) de <strong>Développeur web.</strong> </p>
+            </div>
+        </div>
+    </section>
 
-	<!-- PRESENTATION -->
+    <!-- LANGAGES -->
 
-<section id="about">
-	<div class="container biColor">
-		<div class="col-md-12 text-center section-title">
-			<h2>Présentation</h2>
-			<hr class="separator-text red-separator">
-		</div>
-		<div class="about-text text-center">
-			<p>Après plusieurs années dans le domaine de l'audiovisuel en qualité d'encadrant technique dans la maintenance, l'installation et le conseil pour le <strong>Home Theater</strong>, je me passionne aujourd'hui pour la <strong>Programmation </strong> et plus particulièrement le <strong>Web</strong>.<br> J'ai appris les bases du langage de programmation à la <strong>3W ACADEMY</strong>, et de manière autodidacte en prenant appui auprès d'<strong>Udémy</strong>. Puis j'ai approfondi mes connaissances avec <strong>OpenClassRooms</strong> en validant un titre de niv 5 (bac +2) de <strong>Développeur web.</strong> </p>
-		</div>
-	</div>
-</section>
-	
-	<!-- LANGAGES -->
-<section class="back">
-	<div id="langages">
-		<div class="container biColor1">
-			<div class="col-md-12 text-center section-title">
-				<h2>Langages</h2>
-				<hr class="separator-text red-separator">
-			</div>
-			<div class="row pt-4">
-				<div class="col-12 col-md-12 col-lg-4 texte titre">
-					<h3 class="htmlTitleColor text-center">HTML 5</h3>
-					<p>Le langage HTML (de l’anglais Hypertext Markup Language) est, depuis les toutes premières heures de l’Internet, le programme de base en matière de structuration.</p>
-				</div> 
-				<div class="col-12 col-md-12 col-lg-4 texte titre">
-					<h3 class="cssTitleColor text-center">CSS 3</h3>
-					<p>Les feuilles de style en cascade, appelées CSS (de l'anglais Cascading Style Sheets), forment un langage informatique qui décrit la présentation des documents HTML.</p>
-				</div>
-				<div class="col-12 col-md-12 col-lg-4 texte titre">
-					<h3 class="bootstrapTitleColor text-center">Bootstrap</h3>
-					<p>Bootstrap est une collection d'outils utiles à la création du design de sites et d'applications web. C'est un ensemble de codes HTML et CSS, ainsi que des extensions JavaScript en option.</p>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-12 col-md-12 col-lg-4 texte titre">
-					<h3 class="jsTitleColor text-center">Javascript</h3>
-					<p>Gérer la logique d'un programme en JavaScript, récupérer et modifier des éléments du DOM, Utiliser des méthodes asynchrones.</p>
-				</div>
-				<div class="col-12 col-md-12 col-lg-4 texte titre">
-					<h3 class="nodeTitleColor text-center">Node.js</h3>
-					<p>Node est le runtime qui permet d'écrire toutes les tâches côté serveur, en JavaScript, telles que la logique métier, la persistance des données et la sécurité.</p>
-				</div> 
-				<div class="col-12 col-md-12 col-lg-4 texte titre">
-					<h3 class="vueTitleColor text-center">Vue.js</h3>
-					<p>Construire une application Vue.js, créer des composants réutilisables dans Vue.js, gérer les données d'une application.</p>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-12 col-md-12 col-lg-4 texte titre">
-					<h3 class="mongoTitleColor text-center">MongoDB</h3>
-					<p>Base de données NoSQL, pour rendre une API entièrement dynamique et les données pleinement persistantes.</p>
-				</div> 
-				<div class="col-12 col-md-12 col-lg-4 texte titre">
-					<h3 class="mysqlTitleColor text-center">MySQL</h3>
-					<p>Configurer MySQL, créer et gérer des bases de données.</p>
-				</div>
-				<div class="col-12 col-md-12 col-lg-4 texte titre">
-					<h3 class="wordpressTitleColor text-center">WordPress</h3>
-					<p>WordPress est un logiciel conçu pour toutes et tous, mettant l’accent sur l’accessibilité, la performance, la sécurité et la facilité d’utilisation.</p>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
+    <section class="back">
+        <div id="langages">
+            <div class="container col-md-10 biColor1">
+                <div class="col-md-12 text-center section-title">
+                    <h2>Langages</h2>
+                    <div class="hr mx-auto"></div>
+                </div>
+                <div class="row pt-4">
+                    <div class="col-12 col-md-12 col-lg-4 texte titre">
+                        <h3 class="htmlTitleColor text-center">HTML 5</h3>
+                        <p class="text-center">Le langage HTML (de l’anglais Hypertext Markup Language) est, depuis les toutes premières heures de l’Internet, le programme de base en matière de structuration.</p>
+                    </div> 
+                    <div class="col-12 col-md-12 col-lg-4 texte titre">
+                        <h3 class="cssTitleColor text-center">CSS 3</h3>
+                        <p class="text-center">Les feuilles de style en cascade, appelées CSS (de l'anglais Cascading Style Sheets), forment un langage informatique qui décrit la présentation des documents HTML.</p>
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-4 texte titre">
+                        <h3 class="bootstrapTitleColor text-center">Bootstrap</h3>
+                        <p class="text-center">Bootstrap est une collection d'outils utiles à la création du design de sites et d'applications web. C'est un ensemble de codes HTML et CSS, ainsi que des extensions JavaScript en option.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-12 col-lg-4 texte titre">
+                        <h3 class="jsTitleColor text-center">Javascript</h3>
+                        <p class="text-center">Gérer la logique d'un programme en JavaScript, récupérer et modifier des éléments du DOM, Utiliser des méthodes asynchrones.</p>
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-4 texte titre">
+                        <h3 class="nodeTitleColor text-center">Node.js</h3>
+                        <p class="text-center">Node est le runtime qui permet d'écrire toutes les tâches côté serveur, en JavaScript, telles que la logique métier, la persistance des données et la sécurité.</p>
+                    </div> 
+                    <div class="col-12 col-md-12 col-lg-4 texte titre">
+                        <h3 class="vueTitleColor text-center">Vue.js</h3>
+                        <p class="text-center">Construire une application Vue.js, créer des composants réutilisables dans Vue.js, gérer les données d'une application.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12 col-md-12 col-lg-4 texte titre">
+                        <h3 class="mongoTitleColor text-center">MongoDB</h3>
+                        <p class="text-center">Base de données NoSQL, pour rendre une API entièrement dynamique et les données pleinement persistantes.</p>
+                    </div> 
+                    <div class="col-12 col-md-12 col-lg-4 texte titre">
+                        <h3 class="mysqlTitleColor text-center">MySQL</h3>
+                        <p class="text-center">Configurer MySQL, créer et gérer des bases de données.</p>
+                    </div>
+                    <div class="col-12 col-md-12 col-lg-4 texte titre">
+                        <h3 class="wordpressTitleColor text-center">WordPress</h3>
+                        <p class="text-center">WordPress est un logiciel conçu pour toutes et tous, mettant l’accent sur l’accessibilité, la performance, la sécurité et la facilité d’utilisation.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-	<!-- PORTFOLIO -->
+    <!-- PORTFOLIO -->
 
-<section id="portfolio">
-	<div class="container biColor2 col-md-10">
-		<div class="heading text-center section-title color">
-			<h2>Projets réalisés</h2>
-			<hr class="separator-text red-separator">
-		</div>
-		<div class="row pt-4">
-			<div class="block col-lg-4">
-				<div class="box">
-					<div class="box-inner">
-						<div class="box-front">
-							<a class="thumbnail"><img src="img/capt-reservia.png" alt="image carte réservia"></a>
-						</div>
-						<div class="box-back">
-							<h3 class="title-cart">Reservia</h3>
-							<p class="back_text">Réalisation d'un site à partir d'une maquette (uniquement en html & css)</p>
-							<p class="ocr">(Projet OpenClassRooms validé)</p>
-							<ul class="back_skills">
-								<li class="skills_item html">HTML</li>
-								<li class="skills_item css">CSS</li>
-							</ul>
-							<div class="back_link">
-								<p class="link">
-									<a href="https://fred-2b.github.io/Reservia/" target="_blank" title="lien vers Réservia">ACCES AU SITE</a>
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+    <section id="portfolio">
+        <div class="container col-md-10 biColor2">
+            <div class="heading text-center section-title color">
+                <h2>Projets réalisés</h2>
+                <div class="hr mx-auto"></div>
+            </div>
+            <div class="row pt-4 gy-3">
+                <div class="block col-lg-4">
+                    <div class="box">
+                        <div class="box-inner">
+                            <div class="box-front">
+                                <a class="thumbnail"><img src="img/capt-reservia.png" alt="image carte réservia"></a>
+                            </div>
+                            <div class="box-back">
+                                <h3 class="title-cart">Reservia</h3>
+                                <p class="back_text">Réalisation d'un site à partir d'une maquette (uniquement en html & css)</p>
+                                <p class="ocr">(Projet OpenClassRooms validé)</p>
+                                <ul class="back_skills">
+                                    <li class="skills_item html">HTML</li>
+                                    <li class="skills_item css">CSS</li>
+                                </ul>
+                                <div class="back_link">
+                                    <p class="link">
+                                        <a href="https://fred-2b.github.io/Reservia/" target="_blank" title="lien vers Réservia">ACCES AU SITE</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-			<div class="block col-lg-4">
-				<div class="box">
-					<div class="box-inner">
-						<div class="box-front">
-							<a class="thumbnail"><img src="img/capt-ohmyfood.png" alt="image cart ohmyfood"></a>
-						</div>
-						<div class="box-back">
-							<h3 class="title-cart">OhMyFood</h3>
-							<p class="back_text">Dynamisez une page web avec des animations css, ajout d'un "loading spinner"</p>
-							<p class="ocr">(Projet OpenClassRooms validé)</p>
-							<ul class="back_skills">
-								<li class="skills_item html">HTML</li>
-								<li class="skills_item css">CSS</li>
-								<li class="skills_item sass">SASS</li>
-							</ul>
-							<div class="back_link">
-								<p class="link">
-									<a href="https://fred-2b.github.io/Oh_My_Food/" target="_blank" title="lien vers Oh my food">ACCES AU SITE</a>
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+                <div class="block col-lg-4">
+                    <div class="box">
+                        <div class="box-inner">
+                            <div class="box-front">
+                                <a class="thumbnail"><img src="img/capt-ohmyfood.png" alt="image cart ohmyfood"></a>
+                            </div>
+                            <div class="box-back">
+                                <h3 class="title-cart">OhMyFood</h3>
+                                <p class="back_text">Dynamisez une page web avec des animations css, ajout d'un "loading spinner"</p>
+                                <p class="ocr">(Projet OpenClassRooms validé)</p>
+                                <ul class="back_skills">
+                                    <li class="skills_item html">HTML</li>
+                                    <li class="skills_item css">CSS</li>
+                                    <li class="skills_item sass">SASS</li>
+                                </ul>
+                                <div class="back_link">
+                                    <p class="link">
+                                        <a href="https://fred-2b.github.io/Oh_My_Food/" target="_blank" title="lien vers Oh my food">ACCES AU SITE</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-			<div class="block col-lg-4">
-				<div class="box">
-					<div class="box-inner">
-						<div class="box-front">
-							<a class="thumbnail"><img src="img/capt-agence.png" alt="image cart agence"></a>
-						</div>
-						<div class="box-back">
-							<h3 class="title-cart">La chouette agence</h3>
-							<p class="back_text">Optimisez le référencement d'un site, ces performances et son accessibilité (SEO)</p>
-							<p class="ocr">(Projet OpenClassRooms validé)</p>
-							<ul class="back_skills">
-								<li class="skills_item html">HTML</li>
-								<li class="skills_item css">CSS</li>
-								<li class="skills_item bootstrap">Bootstrap</li>
-							</ul>
-							<div class="back_link">
-								<p class="link">
-									<a href="https://fred-2b.github.io/La-chouette-agence/" target="_blank" title="lien vers La chouette agence">ACCES AU SITE</a>
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+                <div class="block col-lg-4">
+                    <div class="box">
+                        <div class="box-inner">
+                            <div class="box-front">
+                                <a class="thumbnail"><img src="img/capt-agence.png" alt="image cart agence"></a>
+                            </div>
+                            <div class="box-back">
+                                <h3 class="title-cart">La chouette agence</h3>
+                                <p class="back_text">Optimisez le référencement d'un site, ces performances et son accessibilité (SEO)</p>
+                                <p class="ocr">(Projet OpenClassRooms validé)</p>
+                                <ul class="back_skills">
+                                    <li class="skills_item html">HTML</li>
+                                    <li class="skills_item css">CSS</li>
+                                    <li class="skills_item bootstrap">Bootstrap</li>
+                                </ul>
+                                <div class="back_link">
+                                    <p class="link">
+                                        <a href="https://fred-2b.github.io/La-chouette-agence/" target="_blank" title="lien vers La chouette agence">ACCES AU SITE</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-		<div class="row pt-5">
-			<div class="block col-lg-4">
-				<div class="box">
-					<div class="box-inner">
-						<div class="box-front">
-							<a class="thumbnail"><img src="img/capt-piquante.png" alt="image cart piquante"></a>
-						</div>
-						<div class="box-back">
-							<h3 class="title-cart">Piquante</h3>
-							<p class="back_text">Réalisation d'une API sécurisée</p>
-							<p class="ocr">(Projet OpenClassRooms validé)</p>
-							<ul class="back_skills">
-								<li class="skills_item js">JavaScript</li>
-								<li class="skills_item node">Node.js</li>
-								<li class="skills_item express">Express.js</li>
-								<li class="skills_item mongo">MongoDB</li>
-							</ul>
-							<div class="back_link">
-								<p class="link">
-									<a href="https://github.com/Fred-2B/Piquante#readme" target="_blank" title="lien Github Piquante">INSTRUCTIONS</a>
-								</p>
-							</div>	
-						</div>
-					</div>
-				</div>
-			</div>
+            <div class="row pt-5 gy-3">
+                <div class="block col-lg-4">
+                    <div class="box">
+                        <div class="box-inner">
+                            <div class="box-front">
+                                <a class="thumbnail"><img src="img/capt-piquante.png" alt="image cart piquante"></a>
+                            </div>
+                            <div class="box-back">
+                                <h3 class="title-cart">Piquante</h3>
+                                <p class="back_text">Réalisation d'une API sécurisée</p>
+                                <p class="ocr">(Projet OpenClassRooms validé)</p>
+                                <ul class="back_skills">
+                                    <li class="skills_item js">JavaScript</li>
+                                    <li class="skills_item node">Node.js</li>
+                                    <li class="skills_item express">Express.js</li>
+                                    <li class="skills_item mongo">MongoDB</li>
+                                </ul>
+                                <div class="back_link">
+                                    <p class="link">
+                                        <a href="https://github.com/Fred-2B/Piquante#readme" target="_blank" title="lien Github Piquante">INSTRUCTIONS</a>
+                                    </p>
+                                </div>	
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-			<div class="block col-lg-4">
-				<div class="box">
-					<div class="box-inner">
-						<div class="box-front">
-							<a class="thumbnail"><img src="img/capt-orinoco.png" alt="image cart orinoco"></a>
-						</div>
-						<div class="box-back">
-							<h3 class="title-cart">Orinoco</h3>
-							<p class="back_text">Réalisation d'un site e-commerce</p>
-							<p class="ocr">(Projet OpenClassRooms validé)</p>
-							<ul class="back_skills">
-								<li class="skills_item html">HTML</li>
-								<li class="skills_item css">CSS</li>
-								<li class="skills_item bootstrap">Bootstrap</li>
-								<li class="skills_item js">JavaScript</li>
-								<li class="skills_item api">Appel d'une API</li>
-							</ul>
-							<div class="back_link">
-								<p class="link">
-									<a href="https://github.com/Fred-2B/Orinoco#readme" target="_blank" title="lien Github Orinoco">INSTRUCTIONS</a>
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+                <div class="block col-lg-4">
+                    <div class="box">
+                        <div class="box-inner">
+                            <div class="box-front">
+                                <a class="thumbnail"><img src="img/capt-orinoco.png" alt="image cart orinoco"></a>
+                            </div>
+                            <div class="box-back">
+                                <h3 class="title-cart">Orinoco</h3>
+                                <p class="back_text">Réalisation d'un site e-commerce</p>
+                                <p class="ocr">(Projet OpenClassRooms validé)</p>
+                                <ul class="back_skills">
+                                    <li class="skills_item html">HTML</li>
+                                    <li class="skills_item css">CSS</li>
+                                    <li class="skills_item bootstrap">Bootstrap</li>
+                                    <li class="skills_item js">JavaScript</li>
+                                    <li class="skills_item api">Appel d'une API</li>
+                                </ul>
+                                <div class="back_link">
+                                    <p class="link">
+                                        <a href="https://github.com/Fred-2B/Orinoco#readme" target="_blank" title="lien Github Orinoco">INSTRUCTIONS</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-			<div class="block col-lg-4">
-				<div class="box">
-					<div class="box-inner">
-						<div class="box-front">
-							<a class="thumbnail"><img src="img/capt-groupo.png" alt="image cart piquante"></a>
-						</div>
-						<div class="box-back">
-							<h3 class="title-cart">Groupomania</h3>
-							<p class="back_text">Réalisation d'un réseau social d'entreprise</p>
-							<p class="ocr">(Projet OpenClassRooms validé)</p>
-							<ul class="back_skills">
-								<li class="skills_item html">HTML</li>
-								<li class="skills_item css">CSS</li>
-								<li class="skills_item bootstrap">Bootstrap</li>
-								<li class="skills_item js">JavaScript</li>
-								<li class="skills_item express">Express.js</li>
-								<li class="skills_item node">Node.js</li>
-								<li class="skills_item vue">Vue.js</li>
-							</ul>
-							<div class="back_link">
-								<p class="link">
-									<a href="https://github.com/Fred-2B/Groupomania#readme" target="_blank" title="lien Github Groupomania">INSTRUCTIONS</a>
-								</p>
-							</div>	
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+                <div class="block col-lg-4">
+                    <div class="box">
+                        <div class="box-inner">
+                            <div class="box-front">
+                                <a class="thumbnail"><img src="img/capt-groupo.png" alt="image cart piquante"></a>
+                            </div>
+                            <div class="box-back">
+                                <h3 class="title-cart">Groupomania</h3>
+                                <p class="back_text">Réalisation d'un réseau social d'entreprise</p>
+                                <p class="ocr">(Projet OpenClassRooms validé)</p>
+                                <ul class="back_skills">
+                                    <li class="skills_item html">HTML</li>
+                                    <li class="skills_item css">CSS</li>
+                                    <li class="skills_item bootstrap">Bootstrap</li>
+                                    <li class="skills_item js">JavaScript</li>
+                                    <li class="skills_item express">Express.js</li>
+                                    <li class="skills_item node">Node.js</li>
+                                    <li class="skills_item vue">Vue.js</li>
+                                </ul>
+                                <div class="back_link">
+                                    <p class="link">
+                                        <a href="https://github.com/Fred-2B/Groupomania#readme" target="_blank" title="lien Github Groupomania">INSTRUCTIONS</a>
+                                    </p>
+                                </div>	
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-		<div class="row pt-5">
-			<div class="block col-lg-4">
-				<div class="box">
-					<div class="box-inner">
-						<div class="box-front">
-							<a class="thumbnail"><img src="img/capt-franck.png" alt="image cart coaching"></a>
-						</div>
-						<div class="box-back">
-							<h3 class="title-cart">Coaching sportif</h3>
-							<p class="back_text">Site pour coaching sportif</p>
-							<ul class="back_skills mt-5">
-								<li class="skills_item html">HTML</li>
-								<li class="skills_item css">CSS</li>
-								<li class="skills_item bootstrap">Bootstrap</li>
-								<li class="skills_item ekko">Ekko.js</li>
-								<li class="skills_item slide">Slider</li>
-							</ul>
-							<div class="back_link">
-								<p class="link">
-									<a href="site-coaching/index.html" target="_blank" title="lien vers Coaching">ACCES AU SITE</a>
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+            <div class="row pt-5 gy-3">
+                <div class="block col-lg-4">
+                    <div class="box">
+                        <div class="box-inner">
+                            <div class="box-front">
+                                <a class="thumbnail"><img src="img/capt-franck.png" alt="image cart coaching"></a>
+                            </div>
+                            <div class="box-back">
+                                <h3 class="title-cart">Coaching sportif</h3>
+                                <p class="back_text">Site pour coaching sportif</p>
+                                <ul class="back_skills mt-5">
+                                    <li class="skills_item html">HTML</li>
+                                    <li class="skills_item css">CSS</li>
+                                    <li class="skills_item bootstrap">Bootstrap</li>
+                                    <li class="skills_item ekko">Ekko.js</li>
+                                    <li class="skills_item slide">Slider</li>
+                                </ul>
+                                <div class="back_link">
+                                    <p class="link">
+                                        <a href="site-coaching/index.html" target="_blank" title="lien vers Coaching">ACCES AU SITE</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-			<div class="block col-lg-4">
-				<div class="box">
-					<div class="box-inner">
-						<div class="box-front">
-							<a class="thumbnail"><img src="img/capt-hypno.png" alt="image cart hypno"></a>
-						</div>
-						<div class="box-back">
-							<h3 class="title-cart">Hypnothérapie & Sophrologie</h3>
-							<p class="back_text">Réalisation d'un site pour le bien être et le développement personnel</p>
-							<p class="ocr">(Site réalisé et mis en ligne)</p>
-							<ul class="back_skills mt-4">
-								<li class="skills_item html">HTML</li>
-								<li class="skills_item css">CSS</li>
-								<li class="skills_item bootstrap">Bootstrap</li>
-								<li class="skills_item slide">Slider</li>
-							</ul>
-							<div class="back_link">
-								<p class="link">
-									<a href="https://encorpsmieux.github.io/Hypnotherapie-Sophrologie/" target="_blank" title="lien vers en-corps-mieux.fr">ACCES AU SITE</a>
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+                <div class="block col-lg-4">
+                    <div class="box">
+                        <div class="box-inner">
+                            <div class="box-front">
+                                <a class="thumbnail"><img src="img/capt-hypno.png" alt="image cart hypno"></a>
+                            </div>
+                            <div class="box-back">
+                                <h3 class="title-cart">Hypnothérapie & Sophrologie</h3>
+                                <p class="back_text">Réalisation d'un site pour le bien être et le développement personnel</p>
+                                <p class="ocr">(Site réalisé et mis en ligne)</p>
+                                <ul class="back_skills mt-4">
+                                    <li class="skills_item html">HTML</li>
+                                    <li class="skills_item css">CSS</li>
+                                    <li class="skills_item bootstrap">Bootstrap</li>
+                                    <li class="skills_item slide">Slider</li>
+                                </ul>
+                                <div class="back_link">
+                                    <p class="link">
+                                        <a href="https://encorpsmieux.github.io/Hypnotherapie-Sophrologie/" target="_blank" title="lien vers en-corps-mieux.fr">ACCES AU SITE</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-			<div class="block col-lg-4">
-				<div class="box">
-					<div class="box-inner">
-						<div class="box-front">
-							<a class="thumbnail"><img src="img/capt-barbier.png" alt="image cart barbier"></a>
-						</div>
-						<div class="box-back">
-							<h3 class="title-cart">Barbier</h3>
-							<p class="back_text">Site pour barbier</p>
-							<ul class="back_skills mt-5">
-								<li class="skills_item html">HTML</li>
-								<li class="skills_item css">CSS</li>
-								<li class="skills_item bootstrap">Bootstrap</li>
-								<li class="skills_item slide">Slider</li>
-							</ul>
-							<div class="back_link">
-								<p class="link">
-									<a href="site-barbier/index.html" target="_blank" title="lien vers Barbier">ACCES AU SITE</a>
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+                <div class="block col-lg-4">
+                    <div class="box">
+                        <div class="box-inner">
+                            <div class="box-front">
+                                <a class="thumbnail"><img src="img/capt-barbier.png" alt="image cart barbier"></a>
+                            </div>
+                            <div class="box-back">
+                                <h3 class="title-cart">Barbier</h3>
+                                <p class="back_text">Site pour barbier</p>
+                                <ul class="back_skills mt-5">
+                                    <li class="skills_item html">HTML</li>
+                                    <li class="skills_item css">CSS</li>
+                                    <li class="skills_item bootstrap">Bootstrap</li>
+                                    <li class="skills_item slide">Slider</li>
+                                </ul>
+                                <div class="back_link">
+                                    <p class="link">
+                                        <a href="site-barbier/index.html" target="_blank" title="lien vers Barbier">ACCES AU SITE</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-		<div class="container d-flex justify-content-center pt-5">
-			<div class="block col-lg-4">
-				<div class="box">
-					<div class="box-inner">
-						<div class="box-front">
-							<a class="thumbnail"><img src="img/vanillecake.png" alt="image cart coaching"></a>
-						</div>
-						<div class="box-back">
-							<h3 class="title-cart">Blog pour les gourmands</h3>
-							<p class="back_text">Création d'un site de recettes pour la pâtisserie</p>
-							<p class="ocr">(Site en cours de réalisation)</p>
-							<ul class="back_skills mt-4">
-								<li class="skills_item html">HTML</li>
-								<li class="skills_item css">CSS</li>
-								<li class="skills_item bootstrap">Bootstrap</li>
-								<li class="skills_item js">JavaScript</li>
-							</ul>
-							<div class="back_link">
-								<p class="link">
-									<a href="https://alexandra-voutey.github.io/vanillecake.fr/" target="_blank" title="lien vers vanillecake.fr">ACCES AU SITE</a>
-								</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-</section>
+            <div class="container d-flex justify-content-center pt-5">
+                <div class="block col-lg-4">
+                    <div class="box">
+                        <div class="box-inner">
+                            <div class="box-front">
+                                <a class="thumbnail"><img src="img/vanillecake.png" alt="image cart coaching"></a>
+                            </div>
+                            <div class="box-back">
+                                <h3 class="title-cart">Blog pour les gourmands</h3>
+                                <p class="back_text">Création d'un site de recettes pour la pâtisserie</p>
+                                <p class="ocr">(Site en cours de réalisation)</p>
+                                <ul class="back_skills mt-4">
+                                    <li class="skills_item html">HTML</li>
+                                    <li class="skills_item css">CSS</li>
+                                    <li class="skills_item bootstrap">Bootstrap</li>
+                                    <li class="skills_item js">JavaScript</li>
+                                </ul>
+                                <div class="back_link">
+                                    <p class="link">
+                                        <a href="https://alexandra-voutey.github.io/vanillecake.fr/" target="_blank" title="lien vers vanillecake.fr">ACCES AU SITE</a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- CONTACT -->
 
-	<!-- CONTACT -->
+    <section id="contact">
+        <div class="container">
+            <div id="contact-section">
+                <div id="contact-title" class="col-md-12 text-center section-titleC">
+                    <h2>Contact</h2>
+                    <div class="hr mx-auto"></div>
+                </div>
 
-<section id="contact">
-    <div class="container">
-    	<div id="contact-section">
-    		<div id="contact-title" class="col-md-12 text-center section-titleC">
-      			<h2>Contact</h2>
-      			<hr class="separator-text red-separator">
-    		</div>
+                <div id="contact-form">
+                    <div class="container-fluide row justify-content-around pt-5">
+                        <div class="col-12 col-md-12 col-lg-4 pb-3">
+                            <div class="card text-center">
+                                <div class="card-body">
+                                    <p>Disponible pour toute information</p>
+                                    <a href="mailto:flaurenti@free.fr" target="_blank" class="btn-shine" title="e-mail">flaurenti@free.fr</a>
+                                </div>
+                            </div>
+                        </div>
 
-    		<div id="contact-form">
-    			<div class="row pt-5">
-    				<div class="col-12 col-md-12 col-lg-5 pb-3">
-    					<div class="card text-center">
-					    	<div class="card-body">
-					      		<p>Disponible pour toute information</p>
-					      		<a href="mailto:flaurenti@free.fr" target="_blank" class="btn-shine" title="e-mail">flaurenti@free.fr</a>
-					    	</div>
-    					</div>
-    				</div>
+                        <div class="col-12 col-md-12 col-lg-6">
+                            <div class="card text-center">
+                                <div class="card-body">
+                                    <div class="row justify-content-around">
+                                        <div class="col">
+                                            <p>CV au format pdf</p>
+                                            <a href="Laurenti_F_CV.pdf" target="_blank" title="CV Frédéric Laurenti">
+                                                <p class="logo-medias icon icon-pdf">
+                                                    <i class="far fa-file-pdf fa-2x" aria-hidden="true"></i>
+                                                </p>
+                                            </a>
+                                        </div>
 
-    				<div class="col-12 col-md-12 col-lg-7">
-    					<div class="card text-center">
-    						<div class="card-body">
-									<div class="row justify-content-around">
-										<div class="column">
-	    								<p>CV au format pdf</p>
-											<a href="Laurenti_F_CV.pdf" target="_blank" title="CV Frédéric Laurenti">
-	    									<p class="logo-medias icon icon-pdf">
-									    		<i class="far fa-file-pdf fa-2x" aria-hidden="true"></i>
-									    	</p>
-						      		</a>
-						      	</div>
-
-						      	<div class="column">
-							      	<p>accès à Linkedin</p>
-											<a href="https://www.linkedin.com/in/frederic-laurenti/" target="_blank" title="Linkedin Frédéric Laurenti">
-				      					<p class="logo-medias icon icon-link">
-				      						<i class="fab fa-linkedin fa-2x" aria-hidden="true"></i>
-				      					</p>
-			      					</a>
-			      				</div>
-			      				<div class="column">
-							      	<p>accès à Github</p>
-											<a href="https://github.com/Fred-2B?tab=repositories" target="_blank" title="Github Frédéric Laurenti">
-				      					<p class="logo-medias icon icon-git">
-				      						<i class="fab fa-github fa-2x" aria-hidden="true"></i>
-				      					</p>
-			      					</a>
-			      				</div>
-							    </div>
-						    </div>
-    					</div>	
-    				</div>
-					</div>
-    		</div>
-    	</div>
-    </div>
-</section>
+                                        <div class="col">
+                                            <p>accès à Linkedin</p>
+                                            <a href="https://www.linkedin.com/in/frederic-laurenti/" target="_blank" title="Linkedin Frédéric Laurenti">
+                                                <p class="logo-medias icon icon-link">
+                                                    <i class="fab fa-linkedin fa-2x" aria-hidden="true"></i>
+                                                </p>
+                                            </a>
+                                        </div>
+                                        <div class="col">
+                                            <p>accès à Github</p>
+                                            <a href="https://github.com/Fred-2B?tab=repositories" target="_blank" title="Github Frédéric Laurenti">
+                                                <p class="logo-medias icon icon-git">
+                                                    <i class="fab fa-github fa-2x" aria-hidden="true"></i>
+                                                </p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>	
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- FOOTER -->
 
-<footer class="text-center">
-    <a href="#accueil">
-    	<span><i class="fas fa-chevron-circle-up" title="Haut de page"></i></span>
-    </a>
-    <div class="text-center">
-    	<p class="font-weight-light">Copyright © <span id="year"></span> Portfolio Frédéric Laurenti</p>
-  	</div> 
-</footer>
-
-<script>
-	// Generateur date
-	$('#year') .text(new Date().getFullYear());
-	</script>
+    <footer class="text-center">
+        <a href="#accueil">
+            <span><i class="fas fa-chevron-circle-up" title="ACCUEIL"></i></span>
+        </a>
+        <div class="text-center">
+            <p class="fw-lighter">Copyright &copy;
+                <script> document.write(new Date().getFullYear());</script></span> Portfolio Frédéric Laurenti</p>
+        </div> 
+    </footer>
 
 </body>
 </html>
