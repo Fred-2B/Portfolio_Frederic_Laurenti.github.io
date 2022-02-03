@@ -17,7 +17,7 @@ body {
     font-family: 'Dancing Script', cursive;
     color:  #2c3e50;
     font-weight: 700;
-    font-size: 60px;
+    font-size: 50px;
     display: inline-block;
     padding-top: 35px;
     text-shadow: #2c3e50 0.2em 0.2em 0.3em;
@@ -39,7 +39,7 @@ body {
 
 .navbar a {
 	font-family: 'Lato', italic, sans-serif;
-	font-size: 22px;
+	font-size: 20px;
 	font-weight: 400;
     font-style: italic;
 	transition: all 0.6s ease-in-out;
@@ -50,12 +50,12 @@ body {
 }
 
 .navbar-brand img {
-    max-height: 45px;
+    max-height: 40px;
     margin-left: 100px;
 }
 
 .nav-item {
-	margin-right: 55px;
+	margin-right: 50px;
 }
 
 .nav-link  {
@@ -85,7 +85,7 @@ body {
 #introduction {
     margin: 0;
     padding: 0;
-    height: 860px;
+    height: 800px;
     background-image: url(../img/code2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -100,7 +100,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
 	display: inline-block;
-	padding: 0 15px 15px;
+	padding: 30px 15px 10px;
 	border-radius: 5px;
 	border-top: 3px solid #ff0000;
 	border-right: 1px solid #ff0000;
@@ -111,14 +111,13 @@ body {
 
 h1 {
 	font-family: 'Raleway', sans-serif;
-	font-size: 3.2em;
+	font-size: 2.9em;
     color: #2c3e50;
     font-weight: 400;
-    padding-top: 40px;
 }
 
 .post-title {
-	font-size: 35px;
+	font-size: 30px;
 	color: #1d1ddd;
 }
 
@@ -157,7 +156,7 @@ h1 {
 
 #about {
     margin: 40px auto 0;
-    padding: 85px 0;
+    padding: 78px 0;
 }
   
 .biColor {
@@ -171,15 +170,15 @@ h1 {
 .about-text {
     padding: 20px 60px 0;
     font-family: 'Zen Kurenaido', sans-serif;
-    font-size: 1.9em;
-    line-height: 2.5rem;
+    font-size: 1.5em;
+    line-height: 2.6rem;
     color: #2c3e50;
 }
 
 	/* LANGAGES */
 
 #langages {
-    padding: 85px 0;
+    padding: 78px 0;
 }
     
 .biColor1 {
@@ -203,55 +202,93 @@ h1 {
     background-color: #f1f1f1;
 }
 
-.titre h3 {
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+.logo-dev {
+    display: flex;
+    justify-content: center;
 }
 
-.biColor1 h3 {
+.titre h3 {
     font-weight: bold;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 .htmlTitleColor {
     color: #dd4b25;
+    padding-top: 10px;
+}
 
+.text-html {
+    padding-top: 10px;
 }
 
 .cssTitleColor {
     color: #2862e9;
+    padding-top: 10px;
+}
+
+.text-css {
+    padding-top: 9px;
 }
 
 .bootstrapTitleColor {
     color: #8452cf;
+    padding-top: 8px;
+}
+
+.text-boot {
+    padding-top: 10px;
 }
 
 .jsTitleColor {
     color: #efd81d;
+    padding-top: 8px;
 }
 
-.vueTitleColor {
-    color: #4db989;
+.text-js {
+    padding-top: 10px;
 }
 
 .nodeTitleColor {
-    color: #76b15d;
+    color: #8dc62b;
+    padding-top: 10px;
+}
+
+.text-node {
+    padding-top: 3px;
+}
+
+.vueTitleColor {
+    color: #40b883;
+    padding-top: 8px;
+}
+
+.text-vue {
+    padding-top: 10px;
 }
 
 .mongoTitleColor {
-    color: #387a2c;
+    color: #509646;
+    padding-top: 13px;
 }
 
 .mysqlTitleColor {
-    color: #dd8a00;
+    color: #e06f13;
+    padding-top: 8px;
+}
+
+.text-mysql {
+    padding-top: 10px;
 }
 
 .wordpressTitleColor {
-    color: #0000FF;
+    color: #3785cb;
+    padding-top: 10px;
 }
 
     /* PORTFOLIO */
 
 #portfolio {
-    padding: 85px 0 80px;
+    padding: 78px 0 80px;
 }
   
 .biColor2 {
@@ -385,7 +422,7 @@ h1 {
 }
   
 .node {
-    background-color: #76b15d;
+    background-color:#8dc62b;
 }
   
 .express {
@@ -393,7 +430,7 @@ h1 {
 }
   
 .mongo {
-    background-color: #387a2c;
+    background-color: #509646;
 }
   
 .bootstrap {
@@ -405,7 +442,7 @@ h1 {
 }
   
 .vue {
-    background-color: #4db989;
+    background-color: #40b883;
 }
   
 .ekko {
@@ -414,6 +451,10 @@ h1 {
   
 .slide {
     background-color: #b2dad4;
+}
+
+.mysql {
+    background-color: #e06f13;
 }
   
 .ocr {
@@ -452,7 +493,7 @@ h1 {
 }
 
 .section-titleC h2 {
-    font-size: 60px;
+    font-size: 50px;
     display: inline-block;
     font-family: 'Dancing Script', cursive;
     color: #f1f1f1;   
@@ -529,7 +570,7 @@ h1 {
     left: 0;
     height: 100%;
     width: 100%;
-    transition: all 0.60s ease;
+    transition: all 0.5s ease;
     border-radius: 30px;
 }
     
@@ -586,11 +627,11 @@ footer .fas {
     margin: 50px auto 60px;
     color: #2c3e50c9;
     height: 40px;
-    transition: 0.3s ease-in-out;
+    transition: 0.2s ease-in-out;
 }
 
 footer .fas:hover {
-    font-size: 60px;
+    font-size: 65px;
     color: #2c3e50;
 }
 
