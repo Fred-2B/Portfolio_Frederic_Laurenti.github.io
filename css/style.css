@@ -5,7 +5,6 @@ body {
     background-color: #747579;
 }
 
-
 .hr {
     margin: 20px 0 40px;
     height: 3px;
@@ -217,6 +216,11 @@ h1 {
     padding-top: 10px;
 }
 
+.logo-html {
+    height: 2.5em;
+    padding: 6px 0 0 2px;
+}
+
 .text-html {
     padding-top: 10px;
 }
@@ -226,13 +230,23 @@ h1 {
     padding-top: 10px;
 }
 
+.logo-css {
+    height: 2.5em;
+    padding: 6px 0 0 2px;
+}
+
 .text-css {
     padding-top: 9px;
 }
 
 .bootstrapTitleColor {
     color: #8452cf;
-    padding-top: 8px;
+    padding: 8px 4px 0 0;
+}
+
+.logo-boot {
+    height: 2.5em;
+    padding: 6px 0 0 2px;
 }
 
 .text-boot {
@@ -244,22 +258,37 @@ h1 {
     padding-top: 8px;
 }
 
+.logo-java {
+    height: 2.3em;
+    padding: 6px 0 0 6px;
+}
+
 .text-js {
-    padding-top: 10px;
+    padding-top: 13px;
 }
 
 .nodeTitleColor {
     color: #8dc62b;
-    padding-top: 10px;
+    padding-top: 8px;
+}
+
+.logo-node {
+    height: 2.5em;
+    padding: 6px 0 0 4px;
 }
 
 .text-node {
-    padding-top: 3px;
+    padding-top: 10px;
 }
 
 .vueTitleColor {
     color: #40b883;
     padding-top: 8px;
+}
+
+.logo-vue {
+    height: 2.5em;
+    padding: 6px 0 0 4px;
 }
 
 .text-vue {
@@ -268,12 +297,26 @@ h1 {
 
 .mongoTitleColor {
     color: #509646;
-    padding-top: 13px;
+    padding-top: 10px;
+}
+
+.logo-mongo {
+    height: 2.5em;
+    padding: 6px 0 0 0;
+}
+
+.text-mongo {
+    padding-top: 10px;
 }
 
 .mysqlTitleColor {
     color: #e06f13;
-    padding-top: 8px;
+    padding-top: 10px;
+}
+
+.logo-mysql {
+    height: 2.5em;
+    padding: 6px 0 0 0;
 }
 
 .text-mysql {
@@ -283,6 +326,15 @@ h1 {
 .wordpressTitleColor {
     color: #3785cb;
     padding-top: 10px;
+}
+
+.logo-word {
+    height: 2.5em;
+    padding: 6px 0 0 5px;
+}
+
+.text-word {
+    padding-top: 11px;
 }
 
     /* PORTFOLIO */
@@ -501,7 +553,7 @@ h1 {
     text-shadow: black 0.2em 0.2em 0.3em;
 }
     
-.card {
+.card-1, .card-2 {
     border-radius: 5px;
     box-shadow: rgba(0, 0, 0, 0.80) 0px 3px 25px 5px;
     background-color: #D3D3D3;
@@ -636,7 +688,7 @@ footer .fas:hover {
 }
 
 
-@media only screen and (min-width: 993px) and (max-width: 1340px) {
+@media only screen and (min-width: 992px) and (max-width: 1340px) {
     
     .box {
      height: 280px;
@@ -686,8 +738,23 @@ footer .fas:hover {
         margin-right: 30px;
     }
 
-    .card {
+    .card-1, .card-2 {
         height: 12rem;
+    }
+
+    .card-1 .info {
+        padding-bottom: 8px;
+    }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 768px) {
+
+    .card-2 {
+        height: 6rem;
+    }
+
+    .card-2 .title {
+        display: none;
     }
 }
 
