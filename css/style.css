@@ -77,7 +77,7 @@ body {
 .nav-link:hover::after {
     transform: scale(1);
 }
-        /* FIN ANIMATION */
+    /* FIN ANIMATION */
 
 	/* HEADER */
 
@@ -105,7 +105,7 @@ body {
 	border-right: 1px solid #ff0000;
 	border-bottom: 1px solid #ff0000;
 	border-left: 1px solid #ff0000;
-	margin-top: 340px;
+	margin-top: 400px;
 }
 
 h1 {
@@ -113,11 +113,6 @@ h1 {
 	font-size: 2.9em;
     color: #2c3e50;
     font-weight: 400;
-}
-
-.post-title {
-	font-size: 30px;
-	color: #1d1ddd;
 }
 
 .line-1 {
@@ -129,16 +124,22 @@ h1 {
 }
 
 .anim-typewriter {
-    animation: typewriter 3s steps(44) 2s 1 normal both, 
-    blinkTextCursor 500ms steps(44) infinite normal;
-  }
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 2em;
+	color: #1d1ddd;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    animation: typewriter 3s steps(45) 2s 1 normal both, 
+    blinkTextCursor 600ms steps(45) infinite normal;
+}
   
 @keyframes typewriter {
     from {
       width: 0;
     }
     to {
-      width: 8.5em;
+      width: 300px;
     }
 }
 
@@ -148,6 +149,30 @@ h1 {
     }
     to {
       border-right-color: transparent;
+    }
+}
+
+.subtitle {
+    position: absolute;
+	top: 18%;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+    font-family: 'Dancing Script', cursive;
+    font-weight: 700;
+    color: #eee;
+    text-shadow: black 0.1em 0.2em 0.2em;
+    font-size: 5.5rem;
+    opacity: 0;
+    transform: translateY(3rem);
+    animation: fadeInUp 2.5s ease calc(4.8s) forwards;
+}    
+
+
+@keyframes fadeInUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
     }
 }
 
@@ -747,7 +772,45 @@ footer .fas:hover {
     }
 }
 
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    
+    .subtitle {
+        font-size: 3.8rem;
+    }
+
+    #introduction {
+        margin: 0;
+        padding: 0;
+        height: 600px;
+    }
+
+    .light-background {
+        margin-top: 300px;
+    }
+}
+
 @media only screen and (min-width: 300px) and (max-width: 768px) {
+
+    #introduction {
+        margin: 0;
+        padding: 0;
+        height: 400px;
+        background-image: none;
+        border-bottom: 0px solid #D3D3D3;
+    }
+
+    .light-background {
+        margin-top: 140px;
+    }
+
+    .subtitle {
+        display: none;
+    }
+    
+    h1 {
+        font-size: 2em;
+        font-weight: 300;
+    }
 
     .card-2 {
         height: 6rem;
