@@ -286,7 +286,7 @@ h1 {
 
 .logo-java {
     height: 2.3em;
-    padding: 6px 0 0 6px;
+    padding: 6px 0 0 8px;
 }
 
 .text-js {
@@ -342,25 +342,25 @@ h1 {
 
 .logo-mysql {
     height: 2.5em;
-    padding: 6px 0 0 0;
+    padding: 6px 0 0 5px;
 }
 
 .text-mysql {
     padding-top: 10px;
 }
 
-.wordpressTitleColor {
-    color: #3785cb;
-    padding-top: 10px;
+.sassTitleColor {
+    color: #bf4080;
+    padding-top: 13px;
 }
 
-.logo-word {
-    height: 2.5em;
-    padding: 6px 0 0 5px;
+.logo-sass {
+    height: 2.6em;
+    padding: 6px 0 0 6px;
 }
 
-.text-word {
-    padding-top: 11px;
+.text-sass {
+    padding-top: 8px;
 }
 
     /* PORTFOLIO */
