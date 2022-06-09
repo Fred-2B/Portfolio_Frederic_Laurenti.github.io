@@ -404,13 +404,13 @@ h1 {
 }
 
 #top {
-    background: url(../logos/css31.jpg) no-repeat center/cover;
+    background: url(../logos/css3.jpg) no-repeat center/cover;
     transform: rotateX(-270deg) translateY(calc(-1 * (var(--size) / 2)));
     transform-origin: top center; 
 }
 
 #bottom {
-    background: url(../logos/html52.png) no-repeat center/cover;
+    background: url(../logos/html5.png) no-repeat center/cover;
     transform: rotateX(270deg) translateY(calc(var(--size) / 2));
     transform-origin: bottom center; 
 }
@@ -428,7 +428,7 @@ h1 {
 }
 
 #back {
-    background: url(../logos/node1.png) no-repeat center/cover;
+    background: url(../logos/node.png) no-repeat center/cover;
     transform: rotateY(-180deg) translateZ(calc((var(--size) / 2)));
 }
 
