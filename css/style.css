@@ -404,7 +404,7 @@ h1 {
 }
 
 #top {
-    background: url(../logos/css3.jpg) no-repeat center/cover;
+    background: url(../logos/CSS3.jpg) no-repeat center/cover;
     transform: rotateX(-270deg) translateY(calc(-1 * (var(--size) / 2)));
     transform-origin: top center; 
 }
