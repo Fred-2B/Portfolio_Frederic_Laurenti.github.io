@@ -1,0 +1,14 @@
+{
+  "name": "nouveau-portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./assets/sass/scss/style.scss:./assets/sass/css/style.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.55.0"
+  }
+}
