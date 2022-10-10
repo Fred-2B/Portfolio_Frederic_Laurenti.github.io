@@ -23,7 +23,7 @@ function linkAction() {
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
 //Scroll Section Active Link
-const sections = document.querySelectorAll('section[id')
+const sections = document.querySelectorAll('section[id]')
 
 window.addEventListener('scroll', scrollActive)
 
@@ -53,18 +53,19 @@ const sr = ScrollReveal({
 
 // Scroll Home
 sr.reveal('.home__title', {})
-sr.reveal('.home__scroll', {delay: 200})
-sr.reveal('.home__img', {origin: 'right', delay: 400})
+sr.reveal('.home__scroll', {delay: 400})
+sr.reveal('.home__img', {origin: 'right', delay: 600})
 
 // Scroll About
 sr.reveal('.about__img', {delay: 200})
-sr.reveal('.about__subtitle', {delay: 300})
-sr.reveal('.about__profession', {delay: 400})
-sr.reveal('.about__text', {delay: 500})
-sr.reveal('.about__social-icon', {delay: 500, interval:200})
+sr.reveal('.about__subtitle', {delay: 400})
+sr.reveal('.about__profession', {delay: 500})
+sr.reveal('.about__text', {delay: 600})
+sr.reveal('.about__social-icon', {delay: 800, interval:300})
 
 // Scroll Skills
 sr.reveal('.skills__subtitle', {})
+sr.reveal('.skills__img', {delay: 200})
 sr.reveal('.skills__name', {distance: '20px', delay:50, interval: 100})
 sr.reveal('.skills__subtitle', {delay: 400})
 

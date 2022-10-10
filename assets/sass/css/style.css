@@ -12,7 +12,7 @@
     --first-color: #000;
     --white-color: #FAFAFF;
     --dark-color: #1f1f1f;
-    --text-color: #b9b9b9;
+    --text-color: #575555;
 }
 
 /* Typographie */
@@ -101,13 +101,13 @@ img {
 .section-title::after {
     position: absolute;
     content: "";
-    width: 32px;
+    width: 65px;
     height: .18rem;
     left: 0;
     right: 0;
     margin: auto;
-    top: 2rem;
-    background-color: var(--first-color);
+    top: 2.5rem;
+    background-color: var(--text-color);
 }
 
 /* Layout */
@@ -216,20 +216,21 @@ img {
 
 .home__scroll {
     align-self: flex-end;
-    padding-bottom: var(--mb-4);
+    padding: 0 0 4.5rem 3rem;
 }
 
 .home__scroll-link {
     writing-mode: vertical-lr;
     transform: rotate(-180deg);
     color: var(--white-color);
+    font-size: 1.3rem;
 }
 
 .home__img {
     position: absolute;
     right: 0;
     bottom: 0;
-    width: 295px;
+    width: 250px;
     margin-left: 50px;
 }
 
@@ -270,7 +271,7 @@ img {
    margin-top: var(--mb-2);
    color: #676e75;
    font-family: 'Zen Kurenaido', sans-serif;
-   font-size: 1.2rem; 
+   font-size: 1.3rem; 
 }
 
 .about__profession {
@@ -279,8 +280,8 @@ img {
 }
 
 .about__social-icon {
-    font-size: 1.9rem;
-    margin: 0 var(--mb-1);
+    font-size: 2rem;
+    margin: 0 var(--mb-2);
     transition: all .5s;
 }
 
@@ -316,7 +317,7 @@ img {
 }
 
 .skills__img img {
-    border-radius: .5rem;
+    border-radius: .4rem;
 }
 
 /* Portfolio */
@@ -335,10 +336,10 @@ img {
     box-shadow: rgba(0, 0, 0, 0.80) 0px 3px 25px 5px;
 }
 
-.portfolio__img img {
+/*.portfolio__img img {
     border-radius: .5rem;
 }
-
+*/
 .portfolio__link {
     position: absolute;
     bottom: -100%;
@@ -348,7 +349,7 @@ img {
     justify-content: center;
     align-items: center;
     background-color: rgba(225, 225, 225, .3);
-    border-radius: .5rem;
+    /*border-radius: .5rem;*/
     cursor: pointer;
     backdrop-filter: blur(10px);
     transition: .5s;
@@ -394,8 +395,8 @@ img {
     margin-bottom: var(--mb-2);
 }
 
-.contact__text-mail:hover {
-    color: #1f1f1f;
+.contact__text.mail:hover {
+    color: var(--dark-color);
 }
 
 .contact__inputs {
@@ -431,7 +432,7 @@ img {
 .contact__button:hover {
     background-color: var(--white-color);
     color: var(--first-color);
-    border: 1px solid var(--first-color);
+    border: 1px solid var(--dark-color);
 }
 
 /* Footer */
@@ -462,8 +463,8 @@ img {
 }
 
 .footer__social {
-    font-size: 1.7rem;
-    margin-right: var(--mb-4);
+    font-size: 1.8rem;
+    margin-right: var(--mb-3);
 }
 
 .footer__social:hover {
@@ -471,7 +472,7 @@ img {
 }
 
 .footer__date {
-    color: #676e75;
+    color:  #575555;
     font-size: .8rem;
     text-align: center;
     margin-top: var(--mb-3);
@@ -482,11 +483,13 @@ img {
 /* For small devices */
 @media screen and (min-width: 320px) {
     .home__img{
-        width: 330px;
+        width: 280px;
+        right: 5%;
+        bottom: 5%;
     }
     .section-title::after {
-        width: 64px;
-        top: 2.5rem;
+        width: 65px;
+        top: 2.8rem;
     }
 }
 
@@ -501,8 +504,8 @@ img {
         margin-bottom: 3rem;
     }
     .section-title::after {
-        width: 64px;
-        top: 4rem;
+        width: 65px;
+        top: 4.5rem;
     }
     .nav {
         height: calc(var(--header-height) + 1rem);
@@ -532,8 +535,9 @@ img {
         row-gap: 0;
     }
     .home__img {
-        width: 420px;
+        width: 350px;
         right: 10%;
+        bottom: 5%;
     }
     .about__container {
         grid-template-columns: repeat(2, 1fr);
@@ -543,7 +547,7 @@ img {
     }
     .about__img {
         width: 200px;
-        height: 190px;
+        height: 195px;
     }
     /*.about__img img {
         width: 180px;
@@ -561,6 +565,7 @@ img {
         grid-template-columns: repeat(2, 1fr);
         justify-content: center;
     }
+    
     .contact__form {
         width: 380px;
     }
