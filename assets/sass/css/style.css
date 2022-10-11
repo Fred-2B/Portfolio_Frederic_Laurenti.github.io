@@ -256,9 +256,6 @@ img {
     padding-top: 0;
     width: 120px;
     height: 120px;
-    /*background-color: var(--first-color);*/
-    border-radius: 50%;
-    /*overflow: hidden;*/
 }
 
 .about__img img {
@@ -564,7 +561,7 @@ img {
     }
     .about__img {
         width: 200px;
-        height: 195px;
+        height: 200px;
     }
     /*.about__img img {
         width: 180px;
@@ -611,6 +608,9 @@ img {
         align-items: center;
         text-align: center;
         padding: 0 0 4rem;
+    }
+    .about__img {
+       margin-right: 1.6rem;
     }
     .portfolio__link-name h3 {
         font-size: 1.3rem;
