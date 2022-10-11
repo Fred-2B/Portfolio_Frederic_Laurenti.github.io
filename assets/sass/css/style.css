@@ -166,6 +166,11 @@ img {
 }
 
 .nav__logo {
+    color:  #6e6e6e;
+    font-size: var(--normal-font-size);
+}
+
+.nav__logo:hover {
     color: var(--white-color);
 }
 
@@ -294,6 +299,10 @@ img {
     row-gap: 2rem;
 }
 
+.section-title {
+    padding-bottom: var(--mb-4);
+}
+
 .skills__subtitle {
     color: var(--first-color);
     margin-bottom: var(--mb-3);
@@ -345,7 +354,6 @@ img {
     justify-content: center;
     align-items: center;
     background-color: rgba(225, 225, 225, .3);
-    /*border-radius: .5rem;*/
     cursor: pointer;
     backdrop-filter: blur(10px);
     transition: .5s;
