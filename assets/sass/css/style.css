@@ -282,7 +282,7 @@ img {
 }
 
 .about__social-icon {
-    font-size: 2rem;
+    font-size: 1.6rem;
     margin: 0 var(--mb-2);
     transition: all .5s;
 }
