@@ -352,8 +352,8 @@ img {
     align-items: center;
     background-color: rgba(225, 225, 225, .3);
     cursor: pointer;
-    backdrop-filter: blur(10px);
-    transition: .5s;
+    backdrop-filter: blur(8px);
+    transition: .6s;
 }
 
 .portfolio__img:hover .portfolio__link {
