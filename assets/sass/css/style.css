@@ -13,6 +13,7 @@
     --white-color: #FAFAFF;
     --dark-color: #1f1f1f;
     --text-color: #575555;
+    --text-gray:#929191;
 }
 
 /* Typographie */
@@ -166,8 +167,8 @@ img {
 }
 
 .nav__logo {
-    color:  #6e6e6e;
-    font-size: var(--normal-font-size);
+    color:  var(--text-gray);
+    font-size: 1.2rem;
 }
 
 .nav__logo:hover {
@@ -459,8 +460,13 @@ img {
     margin-bottom: var(--mb-2);
 }
 
+.footer__text {
+    color: var(--text-gray);
+}
+
 .footer__link {
     padding: .25rem 0;
+    color: var(--text-gray);
 }
 
 .footer__link:hover {
@@ -468,6 +474,7 @@ img {
 }
 
 .footer__social {
+    color: var(--text-gray);
     font-size: 1.8rem;
     margin-right: var(--mb-3);
 }
