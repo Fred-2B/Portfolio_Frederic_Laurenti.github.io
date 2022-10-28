@@ -10,6 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Zen+Kurenaido&display=swap" rel="stylesheet">
     <!-- Box icons -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
     <!-- Css -->
     <link rel="stylesheet" href="assets/sass/css/style.css">
     <link rel="shortcut icon" href="assets/img/corse2.png">
@@ -17,21 +19,17 @@
 <body>
     <!-- Header -->
     <header class="l-header">
-        <nav class="nav bd-grid">
+        <nav class="nav bd-grid" id="nav">
             <div>
-                <a href="#" class="nav__logo">Frédéric Laurenti</a>
+                <a href="#" class="nav__logo">F L</a>
             </div>
 
             <div class="nav__menu" id="nav-menu">
                 <ul class="nav__list">
                     <li class="nav__item"><a href="#home" class="nav__link active">Accueil</a></li>
-
                     <li class="nav__item"><a href="#about" class="nav__link">Présentation</a></li>
-
                     <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-
                     <li class="nav__item"><a href="#portfolio" class="nav__link">Portfolio</a></li>
-
                     <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
                 </ul>
             </div>
@@ -45,14 +43,15 @@
     <main class="1-main">
         <!-- Home -->
         <section class="home" id="home">
-            <div class="home__container bd-grid">
-                <h1 class="home__title"><span>BON<br>JOUR.</h1></span>
-
+            <div class="home__container bd-grid-intro">
+                <div class="presentation">
+                    <h1 class="home__title"><span>Frédéric Laurenti</span></h1>
+                    <h2 class="home__profession"><span>&ldquo; Développeur Web &rdquo;</span></h2>
+                    <p class="home__subtitle"><span>Bienvenue sur mon portfolio !</span></p>
+                </div>
                 <div class="home__scroll">
                     <a href="#about" class="home__scroll-link"><i class="bx bx-up-arrow-alt"></i>Scroll down</a>
                 </div>
-                
-                <img src="assets/img/virtual.png" alt="image virtual coding" class="home__img">
             </div>
         </section>
 
@@ -64,10 +63,7 @@
                 <div class="about__img">
                     <img src="assets/img/humanFr.png" alt="photo frédéric laurenti" class="about__img">
                 </div>
-
                 <div>
-                    <h2 class="about__subtitle">Frédéric Laurenti</h2>
-                    <span class="about__profession">Développeur Web</span>
                     <p class="about__text">Après plusieurs années dans le domaine de <strong>l'audiovisuel</strong>  en qualité d'encadrant technique dans la maintenance, l'installation et le conseil pour le <strong>Home Theater</strong>, je me passionne aujourd'hui pour la <strong>programmation </strong> et plus particulièrement le <strong>web</strong>.<br> Je me suis initié aux bases du langage de programmation à la <strong>3W Academy</strong>, et de manière autodidacte en prenant appui auprès d'<strong>Udémy</strong>.<br> Puis j'ai approfondi mes connaissances en suivant une formation certifiante d'<strong>OpenClassrooms</strong> et ainsi valider un titre de niv 5 (bac +2) de <strong>Développeur Web.</strong><br>Dans ce <strong>portfolio</strong>, je vous expose les projets réalisés et validés dans le cadre de ma formation.<br> Un site web <strong>réalisé</strong> et mis en ligne sur le thème du<br> <strong>développement personnel</strong> et du <strong>bien-être</strong>.<br>Un projet de site sur la <strong>pâtisserie</strong> en cours de réalisation,<br>ainsi qu'un <strong>essai</strong>, pour le fun et la beauté du lieux.</p>
 
                     <div class="about__social">
@@ -284,10 +280,12 @@
         </div>
     </footer>
 
+    
+
     <!-- Sroll reveal -->
     <script src="https://unpkg.com/scrollreveal"></script>
-
     <!-- Main Js -->
     <script src="assets/js/main.js"></script>
+    
 </body>
 </html>

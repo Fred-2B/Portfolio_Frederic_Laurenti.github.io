@@ -52,9 +52,11 @@ const sr = ScrollReveal({
 })
 
 // Scroll Home
-sr.reveal('.home__title', {})
-sr.reveal('.home__scroll', {delay: 400})
-sr.reveal('.home__img', {origin: 'right', delay: 600})
+sr.reveal('.home__title', {distance: '30px', delay:50, interval: 100})
+sr.reveal('.home__subtitle', {distance: '30px', delay:200, interval: 200})
+sr.reveal('.home__profession', {distance: '30px', delay:260, interval: 300})
+sr.reveal('.home__scroll', {delay:300, interval: 400})
+
 
 // Scroll About
 sr.reveal('.about__img', {delay: 200})

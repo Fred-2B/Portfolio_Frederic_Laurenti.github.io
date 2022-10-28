@@ -147,7 +147,7 @@ img {
         width: 80%;
         height: 100%;
         padding: 2rem;
-        background-color: rgba(225, 225, 225, .3);
+        background-color: rgba(225, 225, 225, 0.473);
         transition: .5s;
         backdrop-filter: blur(10px);
     }
@@ -168,7 +168,7 @@ img {
 
 .nav__logo {
     color:  var(--text-gray);
-    font-size: 1.2rem;
+    font-size: 1.5rem;
 }
 
 .nav__logo:hover {
@@ -198,30 +198,56 @@ img {
 }
 
 /* Home */
+.bd-grid-intro {
+    max-width: 1024px;
+    display: grid;
+    grid-template-columns: 100%;
+    width: 100%;
+    margin: 100px auto 0;
+} 
+
 .home {
+    background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(../../../assets/img/ouverture.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
     position: relative;
-    background-color: var(--first-color);
     overflow: hidden;
 }
 
-.home__container {
-    height: calc(100vh - var(--header-height));
-    row-gap: 5rem;
-}
-
-.home__title {
-    align-self: flex-end;
-    font-size: var(--big-font-size);
+.home .presentation {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
     color: var(--white-color);
-    line-height: .9;
 }
 
-.home__title, span {
+.home .presentation .home__title {
+    font-size: 3.2rem;
+    margin: 5rem 0 1.5rem;
+    letter-spacing: .3rem;
+    text-transform: uppercase;
+    text-shadow: 6px 3px 3px #333333;
+}
+
+.home .presentation .home__profession {
+    font-size: 2.8rem;
+    margin-bottom: 1.5rem;
+    text-shadow: 6px 3px 3px #333333;
+}
+
+.home .presentation .home__subtitle {
+   font-size: 2.6rem;
+   text-shadow: 6px 3px 3px #333333;
+}
+
+.home .presentation span {
     text-shadow: 0 20px 25px rgba(225, 255, 255, .0.198);
 }
 
 .home__scroll {
-    align-self: flex-end;
+    align-self: center;
     padding: 0 0 3rem 1rem;
 }
 
@@ -230,14 +256,6 @@ img {
     transform: rotate(-180deg);
     color: var(--white-color);
     font-size: 1.3rem;
-}
-
-.home__img {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    width: 250px;
-    margin-left: 50px;
 }
 
 /* About */
@@ -263,23 +281,12 @@ img {
     width: 100%;
 }
 
-.about__subtitle {
-    font-size: 1.8rem;
-    color: var(--first-color);
-    margin-bottom: var(--mb-1);
-}
-
 .about__text {
    margin-bottom: var(--mb-4);
    margin-top: var(--mb-2);
    color: #676e75;
    font-family: 'Zen Kurenaido', sans-serif;
    font-size: 1.3rem; 
-}
-
-.about__profession {
-    display: block;
-    margin-bottom: 0 var(--mb-1);
 }
 
 .about__social-icon {
@@ -494,17 +501,12 @@ img {
 /* Media Queries */
 /* For small devices */
 @media screen and (min-width: 320px) {
-    .about .section-title::after {
-        width: 65px;
-        top: 5.8rem;
-    }
     .home__container {
         height: 85vh;
     }
-    .home__img {
-        width: 15rem;
-        right: 5%;
-        bottom: 3%;
+    .about .section-title::after {
+        width: 65px;
+        top: 5.8rem;
     }
     .skills__img img {
         width: 90%;
@@ -526,7 +528,6 @@ img {
         width: 180px;
         top: 2.8rem;
     }
-    
 }
 
 @media screen and (min-width: 768px) {
@@ -574,11 +575,6 @@ img {
         grid-template-rows: 1.7fr 1fr;
         row-gap: 0;
     }
-    .home__img {
-        width: 350px;
-        right: 10%;
-        bottom: 5%;
-    }
     .about__container {
         grid-template-columns: repeat(2, 1fr);
         align-items: center;
@@ -620,6 +616,39 @@ img {
     .footer__container {
         grid-template-columns: repeat(3, 1fr);
         justify-items: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .home .presentation {
+        padding: 0 5px;
+    }
+    .home .presentation .home__profession {
+        font-size: 2.8rem;
+        margin-bottom: 1.5rem;
+        text-shadow: 6px 3px 3px #333333;
+    }
+    .home .presentation .home__subtitle {
+       font-size: 2.6rem;
+       text-shadow: 6px 3px 3px #333333;
+    }
+    .home .presentation .home__title {
+        font-size: 2.1rem;
+        letter-spacing: .1rem;
+    }
+    .home .presentation .home__profession {
+        font-size: 1.8rem;
+        margin-bottom: 1.5rem;
+    }
+    .home .presentation .home__subtitle {
+       font-size: 1.6rem;
+    }
+    .portfolio__img {
+        width: 70%;
+    }
+    .skills__img {
+        width: 81%;
+        margin: 0 auto;
     }
 }
 
