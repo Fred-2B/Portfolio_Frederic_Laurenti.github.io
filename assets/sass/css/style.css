@@ -198,13 +198,13 @@ img {
 }
 
 /* Home */
-.bd-grid-intro {
+/*.bd-grid-intro {
     max-width: 1024px;
     display: grid;
     grid-template-columns: 100%;
     width: 100%;
     margin: 100px auto 0;
-} 
+}*/ 
 
 .home {
     background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .6)), url(../../../assets/img/ouverture.jpg);
@@ -215,39 +215,27 @@ img {
     overflow: hidden;
 }
 
-.home .presentation {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    text-align: center;
+.home__title {
     color: var(--white-color);
-}
-
-.home .presentation .home__title {
-    font-size: 3.2rem;
-    margin: 5rem 0 1.5rem;
+    align-self: center;
+    font-size: 3.1rem;
+    margin: 10rem 0 0 var(--mb-2);
     letter-spacing: .3rem;
     text-transform: uppercase;
     text-shadow: 6px 3px 3px #333333;
 }
 
-.home .presentation .home__profession {
+.home__profession {
+    color: var(--white-color);
     font-size: 2.8rem;
-    margin-bottom: 1.5rem;
-    text-shadow: 6px 3px 3px #333333;
-}
-
-.home .presentation .home__subtitle {
-   font-size: 2.6rem;
-   text-shadow: 6px 3px 3px #333333;
-}
-
-.home .presentation span {
+    align-self: start;
+    text-align: center;
+    margin-top: 2rem;
     text-shadow: 0 20px 25px rgba(225, 255, 255, .0.198);
 }
 
 .home__scroll {
-    align-self: center;
+    align-self: flex-end;
     padding: 0 0 3rem 1rem;
 }
 
@@ -620,28 +608,12 @@ img {
 }
 
 @media screen and (max-width: 768px) {
-    .home .presentation {
-        padding: 0 5px;
+    .home__title {
+        font-size: 2rem;
+        margin-left: 1.5rem;
     }
-    .home .presentation .home__profession {
-        font-size: 2.8rem;
-        margin-bottom: 1.5rem;
-        text-shadow: 6px 3px 3px #333333;
-    }
-    .home .presentation .home__subtitle {
-       font-size: 2.6rem;
-       text-shadow: 6px 3px 3px #333333;
-    }
-    .home .presentation .home__title {
-        font-size: 2.1rem;
-        letter-spacing: .1rem;
-    }
-    .home .presentation .home__profession {
-        font-size: 1.8rem;
-        margin-bottom: 1.5rem;
-    }
-    .home .presentation .home__subtitle {
-       font-size: 1.6rem;
+    .home__profession {
+        font-size: 1.6rem;
     }
     .portfolio__img {
         width: 70%;
